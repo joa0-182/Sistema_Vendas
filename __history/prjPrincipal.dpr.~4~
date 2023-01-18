@@ -1,0 +1,18 @@
+program prjPrincipal;
+
+uses
+  Vcl.Forms,
+  untPrincipal in 'untPrincipal.pas' {Form1},
+  untLogin in 'untLogin.pas' {frmLogin},
+  DM in 'DM.pas' {DataModule1: TDataModule};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TForm1, Form1);
+  Application.CreateForm(TfrmLogin, frmLogin);
+  Application.CreateForm(TDataModule1, DataModule1);
+  Application.Run;
+end.

@@ -1,0 +1,39 @@
+object DataModule1: TDataModule1
+  OldCreateOrder = False
+  Height = 487
+  Width = 596
+  object FDPhysMySQLDriverLink1: TFDPhysMySQLDriverLink
+    VendorLib = 
+      'C:\Users\joao.maria\Desktop\Utilitarios\delphi\Vendas JPM\libmys' +
+      'ql.dll'
+    Left = 504
+    Top = 336
+  end
+  object FDGUIxWaitCursor1: TFDGUIxWaitCursor
+    Provider = 'Forms'
+    Left = 504
+    Top = 408
+  end
+  object conexao: TFDConnection
+    Params.Strings = (
+      'Database=Venda'
+      'User_Name=root'
+      'Password=1234'
+      'Server=localhost'
+      'DriverID=MySQL')
+    Left = 40
+    Top = 24
+  end
+  object FDQuery1: TFDQuery
+    Connection = conexao
+    SQL.Strings = (
+      'SELECT nome_usuario, senha_usuario FROM Usuario'
+      '   WHERE ')
+    Left = 144
+    Top = 120
+  end
+  object DataSource1: TDataSource
+    Left = 144
+    Top = 184
+  end
+end

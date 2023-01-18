@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2022/12/30 08:24:07.000.444,=C:\Users\joao.maria\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/12/30 10:55:05.000.531,=C:\Users\joao.maria\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/01/02 09:21:12.000.294,=C:\Users\joao.maria\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/01/02 09:21:28.000.825,C:\Users\joao.maria\Desktop\Vendas JPM\untPrincipal.pas=C:\Users\joao.maria\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/01/02 09:21:28.000.825,C:\Users\joao.maria\Desktop\Vendas JPM\untPrincipal.dfm=C:\Users\joao.maria\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2023/01/02 09:21:34.000.159,C:\Users\joao.maria\Desktop\Vendas JPM\prjPrincipal.dproj=C:\Users\joao.maria\OneDrive\Documentos\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2023/01/02 09:22:31.000.639,=C:\Users\joao.maria\Desktop\Vendas JPM\Unit2.pas</Transaction>
+    <Transaction>2023/01/02 09:22:41.000.328,C:\Users\joao.maria\Desktop\Vendas JPM\untLogin.pas=C:\Users\joao.maria\Desktop\Vendas JPM\Unit2.pas</Transaction>
+    <Transaction>2023/01/02 09:22:41.000.328,C:\Users\joao.maria\Desktop\Vendas JPM\untLogin.dfm=C:\Users\joao.maria\Desktop\Vendas JPM\Unit2.dfm</Transaction>
+    <Transaction>2023/01/02 11:29:13.000.959,=C:\Users\joao.maria\Desktop\Vendas JPM\Unit1.pas</Transaction>
+    <Transaction>2023/01/02 11:54:50.000.432,C:\Users\joao.maria\Desktop\Vendas JPM\Unit1.pas=C:\Users\joao.maria\Desktop\Vendas JPM\DM.pas</Transaction>
+    <Transaction>2023/01/02 11:54:50.000.432,C:\Users\joao.maria\Desktop\Vendas JPM\Unit1.dfm=C:\Users\joao.maria\Desktop\Vendas JPM\DM.dfm</Transaction>
+  </Transactions>
+</BorlandProject>
