@@ -1,0 +1,90 @@
+inherited frmBaseCadastroTDI: TfrmBaseCadastroTDI
+  Caption = 'frmBaseCadastroTDI'
+  ClientHeight = 437
+  ClientWidth = 655
+  OnShow = FormShow
+  ExplicitWidth = 671
+  ExplicitHeight = 476
+  PixelsPerInch = 96
+  TextHeight = 21
+  object pnlFundo: TPanel
+    Left = 0
+    Top = 0
+    Width = 655
+    Height = 437
+    Align = alClient
+    BevelOuter = bvNone
+    TabOrder = 0
+    ExplicitLeft = 200
+    ExplicitTop = 136
+    ExplicitWidth = 185
+    ExplicitHeight = 41
+    object CP_Cadastro: TCardPanel
+      Left = 0
+      Top = 0
+      Width = 655
+      Height = 437
+      Align = alClient
+      ActiveCard = card_consulta
+      BevelOuter = bvNone
+      TabOrder = 0
+      ExplicitWidth = 768
+      ExplicitHeight = 554
+      object card_consulta: TCard
+        Left = 0
+        Top = 0
+        Width = 655
+        Height = 437
+        Caption = 'consulta'
+        CardIndex = 0
+        TabOrder = 0
+        object pnlBotoes: TPanel
+          Left = 0
+          Top = 384
+          Width = 655
+          Height = 53
+          Align = alBottom
+          BevelOuter = bvNone
+          Color = 16711808
+          ParentBackground = False
+          TabOrder = 0
+        end
+        object pnlConsulta: TPanel
+          Left = 0
+          Top = 0
+          Width = 655
+          Height = 65
+          Align = alTop
+          BevelOuter = bvNone
+          Color = clPurple
+          ParentBackground = False
+          TabOrder = 1
+          object Label1: TLabel
+            Left = 16
+            Top = 13
+            Width = 142
+            Height = 32
+            Caption = '[ CONSULTA ]'
+            Font.Charset = ANSI_CHARSET
+            Font.Color = clWhite
+            Font.Height = -24
+            Font.Name = 'Segoe UI'
+            Font.Style = []
+            ParentFont = False
+          end
+        end
+      end
+      object card_cadastro: TCard
+        Left = 0
+        Top = 0
+        Width = 655
+        Height = 437
+        Caption = 'cadastro'
+        CardIndex = 1
+        TabOrder = 1
+        ExplicitWidth = 768
+        ExplicitHeight = 554
+      end
+    end
+  end
+end

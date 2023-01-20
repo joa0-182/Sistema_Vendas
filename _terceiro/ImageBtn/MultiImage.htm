@@ -1,0 +1,182 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+<title>TMultiImage Component Help</title>
+</head>
+
+<body bgcolor="#FFFFAA" link="Green">
+
+<!--Main-->
+<a name="Overview"></a>
+<font face="Arial" color="Blue"><h1>TMultiImage Component</h1></font>
+<font face="Arial" color="Black">
+<br><br>
+<b>Unit</b><br>
+MultiImage.pas<br><br>
+<b>Description</b><br>
+Description of component<br><br>
+TMultiImage is a TImage component that show images from a linked ImageList.<BR>
+Set image by ImageIndex property or navigate with First / Next / Prior / Last methods.<BR><BR>
+
+<!--Link-->
+<a href="#Types">Types List</a><br>
+<a href="#Properties">Properties List</a><br>
+<a href="#Methods">Methods List</a><br>
+<a href="#Events">Events List</a><br>
+<a href="#Author">About the author...</a><br>
+<a href="#License">License agreement</a><br>
+
+<!--List of Types-->
+<font face="Arial" color="Blue"><h2><a name="Types">Types List for MultiImage Component</a></h2></font>
+<font face="Arial" color="Black">No additional types are defined by this component.<br>
+<hr width="100%" color="Black">
+
+<!--Properties-->
+<font face="Arial" color="Blue"><h2><a name="Properties">Properties List for TMultiImage Component</a></h2></font>
+<font face="Arial" color="Black">This is the properties list defined with TMultiImage Component.<br><br>
+<a href="#Prop_ImageIndex">ImageIndex</a><br><br>
+<a href="#Prop_Images">Images</a><br><br>
+<a href="#Prop_ImagesCount">ImagesCount</a><br><br>
+<a href="#Prop_Version">Version</a><br><br>
+Plus, TMultiImage expose all properties of standard component.
+<hr width="100%" color="Black">
+
+<!--Prop_ImageIndex-->
+<font face="Arial" color="Blue"><h3><a name="Prop_ImageIndex">MultiImage.ImageIndex</a></h3></font>
+<font face="Arial" color="Black">Images determines which image is displayed from the linked ImageList.<br><br>
+<font face="Courier New" color="Black"><b>property</b> ImageIndex: Integer;</font><br><br>
+<font face="Arial" color="Black">
+<b>Description</b><br>
+Setting ImageIndex TMultiImage show the image from the linked ImageList.<BR>
+ImageIndex start from 0 to ImageCount-1.<BR>
+<hr width="100%" color="Black">
+
+<!--Prop_Images-->
+<font face="Arial" color="Blue"><h3><a name="Prop_Images">MultiImage.Images</a></h3></font>
+<font face="Arial" color="Black">Determines which image list is associated with the MultiImage Component.<br><br>
+<font face="Courier New" color="Black"><b>property</b> Images: TCustomImageList;</font><br><br>
+<font face="Arial" color="Black">
+<b>Description</b><br>
+Images represent the linked ImageList that TMultiImage Component uses to get images from.<BR>
+<hr width="100%" color="Black">
+
+<!--Prop_ImagesCount-->
+<font face="Arial" color="Blue"><h3><a name="Prop_ImagesCount">MultiImage.ImageCount</a></h3></font>
+<font face="Arial" color="Black">Specifies the number of images in the image list.<br><br>
+<font face="Courier New" color="Black"><b>property</b> Version: Integer;</font><br><br>
+<font face="Arial" color="Black">
+<b>Description</b><br>
+Use Count when iterating through the images in the linked image list or TMultiImage Component.<BR>
+<hr width="100%" color="Black">
+
+<!--Prop_Version-->
+<font face="Arial" color="Blue"><h3><a name="Prop_Version">MultiImage.Version</a></h3></font>
+<font face="Arial" color="Black">Version determines the version of component.<br><br>
+<font face="Courier New" color="Black"><b>property</b> Version: String;</font><br><br>
+<font face="Arial" color="Black">
+<b>Description</b><br>
+Version is a string which contain the version of component, formatted as follow:<br><br>
+Major.Minor.Release<br><br>
+Current version of component is 1.0.0.
+<hr width="100%" color="Black">
+
+<!--Methods-->
+<font face="Arial" color="Blue"><h2><a name="Methods">Methods List for MultiImage Component</a></h2></font>
+<font face="Arial" color="Black">This is the methods list defined with MultiImage Component.<br>
+<hr width="100%" color="Black">
+
+<a href="#Meth_First">First</a><br><br>
+<a href="#Meth_Next">Next</a><br><br>
+<a href="#Meth_Prior">Prior</a><br><br>
+<a href="#Meth_Last">Last</a><br><br>
+Plus, TMultiImage expose all methods of standard component.
+<hr width="100%" color="Black">
+
+<!--Meth_First-->
+<font face="Arial" color="Blue"><h3><a name="Meth_First">MultiImage.First</a></h3></font>
+<font face="Arial" color="Black">Go to the first image in ImageList.<br><br>
+<font face="Courier New" color="Black"><b>procedure</b> First;</font><br><br>
+<font face="Arial" color="Black">
+<b>Description</b><br>
+Use First method to go and display the first image (ImageIndex=0) from the linked image list.<BR>
+<hr width="100%" color="Black">
+
+<!--Meth_Next-->
+<font face="Arial" color="Blue"><h3><a name="Meth_Next">MultiImage.Next</a></h3></font>
+<font face="Arial" color="Black">Go to the next image in ImageList.<br><br>
+<font face="Courier New" color="Black"><b>procedure</b> Next;</font><br><br>
+<font face="Arial" color="Black">
+<b>Description</b><br>
+Use Next method to go and display the next image (ImageIndex=ImageIndex+1) from the linked image list.<BR>
+<hr width="100%" color="Black">
+
+<!--Meth_Prior-->
+<font face="Arial" color="Blue"><h3><a name="Meth_Prior">MultiImage.Prior</a></h3></font>
+<font face="Arial" color="Black">Go to the previous image in ImageList.<br><br>
+<font face="Courier New" color="Black"><b>procedure</b> Prior;</font><br><br>
+<font face="Arial" color="Black">
+<b>Description</b><br>
+Use Prior method to go and display the previous image (ImageIndex=ImageIndex-1) from the linked image list.<BR>
+<hr width="100%" color="Black">
+
+<!--Meth_Last-->
+<font face="Arial" color="Blue"><h3><a name="Meth_Last">MultiImage.Last</a></h3></font>
+<font face="Arial" color="Black">Go to the last image in ImageList.<br><br>
+<font face="Courier New" color="Black"><b>procedure</b> Last;</font><br><br>
+<font face="Arial" color="Black">
+<b>Description</b><br>
+Use Last method to go and display the last image (ImageIndex=ImagesCount-1) from the linked image list.<BR>
+<hr width="100%" color="Black">
+
+<!--Events-->
+<font face="Arial" color="Blue"><h2><a name="Events">Events List for MultiImage Component</a></h2></font>
+<font face="Arial" color="Black">No additional events are defined by this component.<br>
+<hr width="100%" color="Black">
+
+<!--Authors-->
+<font face="Arial" color="Blue"><h2><a name="Author">About the author...</a></h2></font>
+<font face="Arial" color="Black">
+MultiImage is a component written by me, Giuseppe Garzotto.<br><br>
+I'm a professional software developer living in Thiene, Horth Italy, not far from Venice.<br>
+I'm actually employeed in a big company of Milan, working on an Retail and Food accounting system using Delphi and Oracle.<br>
+On my (few) spare time, I enjoy use Delphi to make components and freeware and shareware software.<br>
+I think that Delphi is the best general purpose development tool available on the market.<br><br>
+To contact me, use:<br><br>
+
+snail-mail:<br>
+<b>Giuseppe Garzotto<br>
+via dei Quartieri, 11<br>
+36016 - Thiene - VI<br>
+Italy.</b><br><br>
+
+e-mail:<br><a href="mailto:double-g@libero.it">double-g@libero.it</a><br>
+</font>
+<hr width="100%" color="Black">
+
+<!--License agreement-->
+<font face="Arial" color="Blue"><h2><a name="License">License agreement</a></h2></font>
+Use of TMultiImage is free for any private or commercial use.<br>
+If you use this component in any software, I'd like to kwow the name and the type of the software.<br>
+Plus, if you think this component is useful, or if simply you like it, I encourage you to make a donation<br>
+to any no-profit association of your country that works in the following fields:<br>
+<ul>
+<li>Medical research (Cancer, AIDS, Alzheimer, ...)
+<li>Medical assistance (Red Cross, Medicins Sans Frontieres, Emergency, ...)
+<li>Environment defense(WWF, GreenPeace, ...)
+<li>International cooperation (UN, UNICEF, FAO, ...)
+<li>Human rights defense (Amnesty, ...)
+</ul>
+and send me a piece of notice about your donation. Thank you.<br><br>
+
+<b>Disclaimer Information</b><br>
+TMultiImage is provided AS IS without any warranty, expressed or implied. In no event will the programmer be liable to you or any
+third party for any damages, including any loss of profit, lost of data or other incidental, consequential or special damages.<br><br>
+Any requests, bug notices or suggestions are welcome to <a href="mailto:double-g@libero.it">double-g@libero.it</a><br><br>
+<b>Copyright Notes</b><br>
+Copyright (c) 1999/2003 Giuseppe Garzotto<br>
+<a href="mailto:double-g@libero.it">double-g@libero.it</a><br>
+<hr width="100%" color="Black">
+</font>
+</body>
+</html>

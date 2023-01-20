@@ -6,10 +6,11 @@ uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.Imaging.pngimage,
   Vcl.StdCtrls, Vcl.WinXCtrls, Vcl.CategoryButtons, Vcl.Buttons, System.Actions,
-  Vcl.ActnList, System.ImageList, Vcl.ImgList, Vcl.Imaging.jpeg;
+  Vcl.ActnList, System.ImageList, Vcl.ImgList, Vcl.Imaging.jpeg, untBase, TDI, untHomeTDI,
+  untCadastroClienteTDI;
 
 type
-  TfrmPrincipal = class(TForm)
+  TfrmPrincipal = class(TfrmBase)
     Header: TPanel;
     HeaderMenu: TPanel;
     pnlMenu: TPanel;
@@ -22,7 +23,7 @@ type
     lblUsuario: TLabel;
     lblNameUsuario: TLabel;
     menu: TSplitView;
-    CategoryButtons1: TCategoryButtons;
+    categoriaBtnMenu: TCategoryButtons;
     pnlSair: TPanel;
     btnSair: TSpeedButton;
     ImageList1: TImageList;
@@ -39,8 +40,7 @@ type
     btnUsuario: TSpeedButton;
     ImageList2: TImageList;
     ActionList2: TActionList;
-    Panel10: TPanel;
-    Image5: TImage;
+    pnlTDI: TPanel;
     actCliente: TAction;
     actProduto: TAction;
     actUsuario: TAction;
@@ -74,10 +74,17 @@ type
     procedure imgMenuCloseClick(Sender: TObject);
     procedure imgUserHoverMouseLeave(Sender: TObject);
     procedure imgUserMouseEnter(Sender: TObject);
+    procedure FormShow(Sender: TObject);
   private
     { Private declarations }
   public
     { Public declarations }
+
+
+    var
+      FTDI: TTDI;
+
+
   end;
 
 var
@@ -138,6 +145,7 @@ end;
 procedure TfrmPrincipal.btnClienteClick(Sender: TObject);
 begin
   submenu.Close;
+  FTDI.MostrarFormulario(TfrmCadastroClienteTDI, false);
 end;
 
 procedure TfrmPrincipal.btnSairClick(Sender: TObject);
@@ -155,6 +163,12 @@ end;
 procedure TfrmPrincipal.FormCreate(Sender: TObject);
 begin
   DoubleBuffered := True;
+end;
+
+procedure TfrmPrincipal.FormShow(Sender: TObject);
+begin
+  FTDI := TTDI.Create(pnlTDI, TfrmHomeTDI);
+  FTDI.MostrarMenuPopup := false;
 end;
 
 procedure TfrmPrincipal.Image1MouseEnter(Sender: TObject);

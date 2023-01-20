@@ -1,0 +1,24 @@
+unit untCadClienteTDI;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, untBaseTDI;
+
+type
+  TfrmCadastroClienteTDI = class(TfrmBaseTDI)
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmCadastroClienteTDI: TfrmCadastroClienteTDI;
+
+implementation
+
+{$R *.dfm}
+
+end.

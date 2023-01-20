@@ -1,0 +1,8 @@
+Date         Version   Release notes and changes
+-------------------------------------------------------------------------------
+21/11/1999     1.0.0   First release for Delphi 4.0
+25/03/2003     1.5.0   Property Version and ImageCount moved from published to 
+                       public section.
+                       The component is now opensource, with an invitation to 
+                       make a donation to a no-profit organization
+                       (see MultiImage.htm for any further detail)

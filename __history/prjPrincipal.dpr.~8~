@@ -1,0 +1,24 @@
+program prjPrincipal;
+
+uses
+  Vcl.Forms,
+  untPrincipal in 'untPrincipal.pas' {frmPrincipal},
+  untLogin in 'untLogin.pas' {frmLogin},
+  DM in 'DM.pas' {DataModule1: TDataModule},
+  untBase in 'untBase.pas' {frmBase},
+  untBaseTDI in 'untBaseTDI.pas' {frmBaseTDI},
+  untCadClienteTDI in 'untCadClienteTDI.pas' {frmCadastroClienteTDI};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TfrmPrincipal, frmPrincipal);
+  Application.CreateForm(TfrmLogin, frmLogin);
+  Application.CreateForm(TDataModule1, DataModule1);
+  Application.CreateForm(TfrmBase, frmBase);
+  Application.CreateForm(TfrmBaseTDI, frmBaseTDI);
+  Application.CreateForm(TfrmCadastroClienteTDI, frmCadastroClienteTDI);
+  Application.Run;
+end.

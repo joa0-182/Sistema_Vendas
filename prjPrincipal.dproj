@@ -83,6 +83,8 @@
         <DCC_RemoteDebug>false</DCC_RemoteDebug>
         <AppEnableRuntimeThemes>true</AppEnableRuntimeThemes>
         <AppDPIAwarenessMode>PerMonitorV2</AppDPIAwarenessMode>
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+        <VerInfo_Locale>1033</VerInfo_Locale>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_2)'!=''">
         <DCC_LocalDebugSymbols>false</DCC_LocalDebugSymbols>
@@ -111,6 +113,30 @@
             <FormType>dfm</FormType>
             <DesignClass>TDataModule</DesignClass>
         </DCCReference>
+        <DCCReference Include="untBase.pas">
+            <Form>frmBase</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="untBaseTDI.pas">
+            <Form>frmBaseTDI</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="_terceiro\TDI\PageControlEx.pas"/>
+        <DCCReference Include="_terceiro\TDI\TabCloseButton.pas"/>
+        <DCCReference Include="_terceiro\TDI\TDI.pas"/>
+        <DCCReference Include="_terceiro\TDI\VisualizaImagensDasGuiasAbertas.pas"/>
+        <DCCReference Include="untHomeTDI.pas">
+            <Form>frmHomeTDI</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="untCadastroBaseTDI.pas">
+            <Form>frmBaseCadastroTDI</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="untCadastroClienteTDI.pas">
+            <Form>frmCadastroClienteTDI</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>
@@ -131,6 +157,10 @@
                 <Source>
                     <Source Name="MainSource">prjPrincipal.dpr</Source>
                 </Source>
+                <Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\dcloffice2k270.bpl">Microsoft Office 2000 Sample Automation Server Wrapper Components</Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\dclofficexp270.bpl">Microsoft Office XP Sample Automation Server Wrapper Components</Excluded_Packages>
+                </Excluded_Packages>
             </Delphi.Personality>
             <Deployment Version="3">
                 <DeployFile LocalName="Win32\Debug\prjPrincipal.exe" Configuration="Debug" Class="ProjectOutput">
