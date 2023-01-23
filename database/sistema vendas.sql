@@ -3,27 +3,27 @@ USE Venda;
 
 
 CREATE TABLE Usuario (
-	id_usuario		 		INT NOT NULL AUTO_INCREMENT,
-    nome_usuario			VARCHAR(50) NOT NULL,
-    senha_usuario			VARCHAR(30) NOT NULL,
+	id_usuario		 				INT NOT NULL AUTO_INCREMENT,
+    nome_usuario					VARCHAR(50) NOT NULL,
+    senha_usuario					VARCHAR(30) NOT NULL,
     PRIMARY KEY(id_usuario)
 );
 
 
 CREATE TABLE Cliente (
-	id_cliente 				INT NOT NULL AUTO_INCREMENT,
-    id_estado_cliente		INT NOT NULL,
-    nome_cliente			VARCHAR(70) NOT NULL,
-    Cpf						VARCHAR(15) NOT NULL UNIQUE,
-    Sexo					ENUM('M', 'F', 'O') NOT NULL,
-    Telefone				VARCHAR(15),
-    UF						CHAR(2),
+	id_cliente 						INT NOT NULL AUTO_INCREMENT,
+    id_estado_cliente				INT NOT NULL,
+    nome_cliente					VARCHAR(70) NOT NULL,
+    Cpf_cliente						VARCHAR(15) NOT NULL UNIQUE,
+    Sexo_cliente					ENUM('M', 'F', 'O') NOT NULL,
+    Telefone_cliente				VARCHAR(15),
+    UF_cliente						CHAR(2),
     PRIMARY KEY(id_cliente)
 );
 
 CREATE TABLE Estado (
-	id_estado				INT NOT NULL AUTO_INCREMENT,
-    Sigla					CHAR(2) NOT NULL,
+	id_estado						INT NOT NULL AUTO_INCREMENT,
+    Sigla_estado					CHAR(2) NOT NULL,
     PRIMARY KEY (id_estado)
 );
 

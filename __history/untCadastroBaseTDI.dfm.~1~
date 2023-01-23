@@ -1,5 +1,0 @@
-inherited frmBaseTDI1: TfrmBaseTDI1
-  Caption = 'frmBaseTDI1'
-  PixelsPerInch = 96
-  TextHeight = 21
-end

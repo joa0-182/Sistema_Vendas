@@ -21,7 +21,5 @@ begin
   Application.Initialize;
   Application.MainFormOnTaskbar := True;
   Application.CreateForm(TfrmPrincipal, frmPrincipal);
-  Application.CreateForm(TfrmBaseCadastroTDI, frmBaseCadastroTDI);
-  Application.CreateForm(TfrmCadastroClienteTDI, frmCadastroClienteTDI);
   Application.Run;
 end.
