@@ -41,7 +41,7 @@ implementation
 
 {$R *.dfm}
 
-uses untPrincipal, DM;
+uses untPrincipal, untDM;
 
 procedure TfrmLogin.btnSairClick(Sender: TObject);
 begin

@@ -1,0 +1,31 @@
+unit untPDV;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ToolWin, Vcl.ComCtrls, Vcl.StdCtrls,
+  Vcl.ExtCtrls;
+
+type
+  TfrmPDV = class(TForm)
+    pnlHeader: TPanel;
+    pnlLabel: TPanel;
+    Label1: TLabel;
+    pnlBtn: TPanel;
+    pnlGrid: TPanel;
+    pnlInformacoes: TPanel;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmPDV: TfrmPDV;
+
+implementation
+
+{$R *.dfm}
+
+end.

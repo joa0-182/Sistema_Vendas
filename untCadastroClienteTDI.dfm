@@ -5,7 +5,24 @@ inherited frmCadastroClienteTDI: TfrmCadastroClienteTDI
   inherited pnlFundo: TPanel
     inherited CP_Cadastro: TCardPanel
       inherited card_consulta: TCard
-        ExplicitTop = 0
+        inherited pnlConsulta: TPanel
+          inherited pnlTitulo: TPanel
+            inherited lblConsulta: TLabel
+              Width = 322
+              Caption = '[ CONSULTA -> Clientes ]'
+              ExplicitWidth = 322
+            end
+          end
+        end
+      end
+      inherited card_cadastro: TCard
+        inherited pnlCadastro: TPanel
+          inherited lblCadastro: TLabel
+            Width = 326
+            Caption = '[ CADASTRO -> Clientes ]'
+            ExplicitWidth = 326
+          end
+        end
       end
     end
     inherited pnlBotoes: TPanel

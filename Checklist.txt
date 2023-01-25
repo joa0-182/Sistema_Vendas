@@ -1,0 +1,16 @@
+Cadastro
+
+- Clientes
+- Usuário
+- Funcionário
+- Fornecedor
+
+
+Login
+
+- Usuarios diferentes
+
+
+Controle de Estoque
+
+Caixa - PDV

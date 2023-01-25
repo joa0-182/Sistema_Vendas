@@ -7,7 +7,7 @@ uses
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.Imaging.pngimage,
   Vcl.StdCtrls, Vcl.WinXCtrls, Vcl.CategoryButtons, Vcl.Buttons, System.Actions,
   Vcl.ActnList, System.ImageList, Vcl.ImgList, Vcl.Imaging.jpeg, untBase, TDI, untHomeTDI,
-  untCadastroClienteTDI;
+  untCadastroClienteTDI, untCadastroProdutoTDI, untCadastroUsuarioTDI;
 
 type
   TfrmPrincipal = class(TfrmBase)
@@ -26,20 +26,20 @@ type
     categoriaBtnMenu: TCategoryButtons;
     pnlSair: TPanel;
     btnSair: TSpeedButton;
-    ImageList1: TImageList;
-    ActionList1: TActionList;
+    imgListFuncoes: TImageList;
+    actListFuncoes: TActionList;
     Action1: TAction;
     Action2: TAction;
     Action3: TAction;
     submenu: TSplitView;
-    Panel9: TPanel;
-    Label4: TLabel;
+    pnlTituloSubMenu: TPanel;
+    lblTituloSubMenu: TLabel;
     FlowPanel1: TFlowPanel;
     btnCliente: TSpeedButton;
     btnProduto: TSpeedButton;
     btnUsuario: TSpeedButton;
-    ImageList2: TImageList;
-    ActionList2: TActionList;
+    imgListIcons: TImageList;
+    imgListImg: TActionList;
     pnlTDI: TPanel;
     actCliente: TAction;
     actProduto: TAction;
@@ -120,11 +120,13 @@ end;
 procedure TfrmPrincipal.actProdutoExecute(Sender: TObject);
 begin
   submenu.close;
+  FTDI.MostrarFormulario(TfrmCadastroProdutoTDI, false);
 end;
 
 procedure TfrmPrincipal.actUsuarioExecute(Sender: TObject);
 begin
   submenu.close;
+  FTDI.MostrarFormulario(TfrmCadastroUsuarioTDI, false);
 end;
 
 procedure TfrmPrincipal.Action7Execute(Sender: TObject);
@@ -169,6 +171,8 @@ procedure TfrmPrincipal.FormShow(Sender: TObject);
 begin
   FTDI := TTDI.Create(pnlTDI, TfrmHomeTDI);
   FTDI.MostrarMenuPopup := false;
+
+
 end;
 
 procedure TfrmPrincipal.Image1MouseEnter(Sender: TObject);

@@ -1214,7 +1214,7 @@ object frmLogin: TfrmLogin
         AlignWithMargins = True
         Left = 3
         Top = 8
-        Width = 347
+        Width = 149
         Height = 18
         Margins.Top = 8
         Align = alTop
@@ -1225,7 +1225,6 @@ object frmLogin: TfrmLogin
         Font.Name = 'Arial'
         Font.Style = []
         ParentFont = False
-        ExplicitWidth = 149
       end
       object edtUsuario: TEdit
         AlignWithMargins = True
@@ -1274,7 +1273,7 @@ object frmLogin: TfrmLogin
         AlignWithMargins = True
         Left = 3
         Top = 8
-        Width = 347
+        Width = 55
         Height = 18
         Margins.Top = 8
         Align = alTop
@@ -1285,7 +1284,6 @@ object frmLogin: TfrmLogin
         Font.Name = 'Arial'
         Font.Style = []
         ParentFont = False
-        ExplicitWidth = 55
       end
       object edtSenha: TEdit
         AlignWithMargins = True

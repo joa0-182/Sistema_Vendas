@@ -3,7 +3,6 @@ inherited frmBaseCadastroTDI: TfrmBaseCadastroTDI
   ClientHeight = 701
   ClientWidth = 1008
   OnShow = FormShow
-  ExplicitLeft = -314
   ExplicitWidth = 1024
   ExplicitHeight = 740
   PixelsPerInch = 96
@@ -16,8 +15,6 @@ inherited frmBaseCadastroTDI: TfrmBaseCadastroTDI
     Align = alClient
     BevelOuter = bvNone
     TabOrder = 0
-    ExplicitWidth = 702
-    ExplicitHeight = 448
     object CP_Cadastro: TCardPanel
       Left = 0
       Top = 0
@@ -27,8 +24,6 @@ inherited frmBaseCadastroTDI: TfrmBaseCadastroTDI
       ActiveCard = card_cadastro
       BevelOuter = bvNone
       TabOrder = 0
-      ExplicitWidth = 702
-      ExplicitHeight = 398
       object card_consulta: TCard
         Left = 0
         Top = 0
@@ -37,7 +32,6 @@ inherited frmBaseCadastroTDI: TfrmBaseCadastroTDI
         Caption = 'consulta'
         CardIndex = 0
         TabOrder = 0
-        ExplicitTop = -3
         object pnlConsulta: TPanel
           Left = 0
           Top = 0
@@ -56,7 +50,6 @@ inherited frmBaseCadastroTDI: TfrmBaseCadastroTDI
             Align = alTop
             BevelOuter = bvNone
             TabOrder = 0
-            ExplicitTop = 1
             object lblConsulta: TLabel
               AlignWithMargins = True
               Left = 2
@@ -77,9 +70,7 @@ inherited frmBaseCadastroTDI: TfrmBaseCadastroTDI
               Font.Style = []
               ParentColor = False
               ParentFont = False
-              ExplicitLeft = 32
-              ExplicitTop = -5
-              ExplicitHeight = 41
+              ExplicitHeight = 40
             end
           end
           object pnlPesquisa: TPanel
@@ -107,9 +98,6 @@ inherited frmBaseCadastroTDI: TfrmBaseCadastroTDI
               Font.Style = []
               ParentFont = False
               TabOrder = 0
-              ExplicitLeft = 0
-              ExplicitTop = 12
-              ExplicitWidth = 1008
             end
           end
         end
@@ -139,9 +127,6 @@ inherited frmBaseCadastroTDI: TfrmBaseCadastroTDI
         Caption = 'cadastro'
         CardIndex = 1
         TabOrder = 1
-        ExplicitTop = -3
-        ExplicitWidth = 702
-        ExplicitHeight = 398
         object pnlCadastro: TPanel
           Left = 0
           Top = 0
@@ -168,8 +153,6 @@ inherited frmBaseCadastroTDI: TfrmBaseCadastroTDI
             Font.Style = []
             ParentColor = False
             ParentFont = False
-            ExplicitLeft = 6
-            ExplicitTop = 11
             ExplicitHeight = 40
           end
           object pnlVoltar: TPanel
@@ -243,7 +226,6 @@ inherited frmBaseCadastroTDI: TfrmBaseCadastroTDI
       Color = 15790320
       ParentBackground = False
       TabOrder = 1
-      ExplicitTop = 654
       object pnlSalvar: TPanel
         AlignWithMargins = True
         Left = 863
@@ -265,7 +247,6 @@ inherited frmBaseCadastroTDI: TfrmBaseCadastroTDI
         ParentBackground = False
         ParentFont = False
         TabOrder = 0
-        ExplicitLeft = 557
         object shpSalvar: TShape
           Left = 0
           Top = 0
@@ -318,7 +299,6 @@ inherited frmBaseCadastroTDI: TfrmBaseCadastroTDI
         Color = 15790320
         ParentBackground = False
         TabOrder = 1
-        ExplicitLeft = 408
         object shpDeletar: TShape
           Left = 0
           Top = 0
@@ -370,7 +350,6 @@ inherited frmBaseCadastroTDI: TfrmBaseCadastroTDI
         Color = 15790320
         ParentBackground = False
         TabOrder = 2
-        ExplicitLeft = -39
         object shpNovo: TShape
           Left = 0
           Top = 0
@@ -423,7 +402,6 @@ inherited frmBaseCadastroTDI: TfrmBaseCadastroTDI
         Color = 15790320
         ParentBackground = False
         TabOrder = 3
-        ExplicitLeft = 110
         object shpEditar: TShape
           Left = 0
           Top = 0
@@ -476,7 +454,6 @@ inherited frmBaseCadastroTDI: TfrmBaseCadastroTDI
         Color = 15790320
         ParentBackground = False
         TabOrder = 4
-        ExplicitLeft = 259
         object shpCancelar: TShape
           Left = 0
           Top = 0

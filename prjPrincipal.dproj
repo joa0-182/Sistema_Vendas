@@ -108,8 +108,8 @@
             <Form>frmLogin</Form>
             <FormType>dfm</FormType>
         </DCCReference>
-        <DCCReference Include="DM.pas">
-            <Form>DataModule1</Form>
+        <DCCReference Include="untDM.pas">
+            <Form>DM</Form>
             <FormType>dfm</FormType>
             <DesignClass>TDataModule</DesignClass>
         </DCCReference>
@@ -135,6 +135,18 @@
         </DCCReference>
         <DCCReference Include="untCadastroClienteTDI.pas">
             <Form>frmCadastroClienteTDI</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="untPDV.pas">
+            <Form>frmPDV</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="untCadastroProdutoTDI.pas">
+            <Form>frmCadastroProdutoTDI</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="untCadastroUsuarioTDI.pas">
+            <Form>frmCadastroUsuarioTDI</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <BuildConfiguration Include="Release">
