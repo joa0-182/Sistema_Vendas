@@ -7,7 +7,7 @@ uses
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.Imaging.pngimage,
   Vcl.StdCtrls, Vcl.WinXCtrls, Vcl.CategoryButtons, Vcl.Buttons, System.Actions,
   Vcl.ActnList, System.ImageList, Vcl.ImgList, Vcl.Imaging.jpeg, untBase, TDI, untHomeTDI,
-  untCadastroClienteTDI, untCadastroProdutoTDI, untCadastroUsuarioTDI;
+  untCadastroClienteTDI, untCadastroProdutoTDI, untCadastroUsuarioTDI, untPDV;
 
 type
   TfrmPrincipal = class(TfrmBase)
@@ -23,7 +23,6 @@ type
     lblUsuario: TLabel;
     lblNameUsuario: TLabel;
     menu: TSplitView;
-    categoriaBtnMenu: TCategoryButtons;
     pnlSair: TPanel;
     btnSair: TSpeedButton;
     imgListFuncoes: TImageList;
@@ -51,11 +50,27 @@ type
     imgMenuOpen: TImage;
     imgUserHover: TImage;
     pnlLinha: TPanel;
+    Action4: TAction;
+    Action5: TAction;
+    pnlConfig: TPanel;
+    pnlImgConfig: TPanel;
+    imgConfig: TImage;
+    btnConfig: TSpeedButton;
+    pnlEstoque: TPanel;
+    btnEstoque: TSpeedButton;
+    pnlImgEstoque: TPanel;
+    imgEstoque: TImage;
+    pnlPDV: TPanel;
+    btnPDV: TSpeedButton;
+    pnlImgpdv: TPanel;
+    imgPDV: TImage;
+    pnlCad: TPanel;
+    btnCad: TSpeedButton;
+    pnlImgCadastro: TPanel;
+    imgCadastro: TImage;
+    pnlLinha2: TPanel;
     procedure Image1MouseEnter(Sender: TObject);
     procedure Image2MouseLeave(Sender: TObject);
-    procedure Image2Click(Sender: TObject);
-    procedure btnSairClick(Sender: TObject);
-    procedure Action1Execute(Sender: TObject);
     procedure Action2Execute(Sender: TObject);
     procedure Action3Execute(Sender: TObject);
     procedure actClienteExecute(Sender: TObject);
@@ -75,6 +90,11 @@ type
     procedure imgUserHoverMouseLeave(Sender: TObject);
     procedure imgUserMouseEnter(Sender: TObject);
     procedure FormShow(Sender: TObject);
+    procedure btnSairClick(Sender: TObject);
+    procedure btnPDVClick(Sender: TObject);
+    procedure btnCadClick(Sender: TObject);
+    procedure imgCadastroClick(Sender: TObject);
+    procedure imgPDVClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -93,14 +113,6 @@ var
 implementation
 
 {$R *.dfm}
-
-procedure TfrmPrincipal.Action1Execute(Sender: TObject);
-begin
-  if submenu.Opened then
-    submenu.close
-  else
-    submenu.Open;
-end;
 
 procedure TfrmPrincipal.Action2Execute(Sender: TObject);
 begin
@@ -144,15 +156,29 @@ begin
   submenu.close;
 end;
 
+procedure TfrmPrincipal.btnCadClick(Sender: TObject);
+begin
+  if submenu.opened then
+    submenu.Close
+  else
+    submenu.Open;
+end;
+
 procedure TfrmPrincipal.btnClienteClick(Sender: TObject);
 begin
   submenu.Close;
   FTDI.MostrarFormulario(TfrmCadastroClienteTDI, false);
 end;
 
+procedure TfrmPrincipal.btnPDVClick(Sender: TObject);
+begin
+  frmPDV.Show;
+end;
+
 procedure TfrmPrincipal.btnSairClick(Sender: TObject);
 begin
-  if Application.MessageBox('Deseja Sair?', '  Confirme', MB_YESNO + MB_ICONQUESTION + MB_DEFBUTTON2) = id_yes then
+  inherited;
+  if Application.MessageBox('Deseja Sair?', 'Confirme', MB_YESNO + MB_ICONQUESTION + MB_DEFBUTTON2) = id_yes then
         begin
           application.Terminate;
         end
@@ -185,17 +211,17 @@ begin
   //
 end;
 
-procedure TfrmPrincipal.Image2Click(Sender: TObject);
-begin
-  if menu.Opened then
-    menu.close
-  else
-    menu.Open;
-end;
-
 procedure TfrmPrincipal.Image2MouseLeave(Sender: TObject);
 begin
   //
+end;
+
+procedure TfrmPrincipal.imgCadastroClick(Sender: TObject);
+begin
+  if submenu.Opened then
+    submenu.Close
+  else
+    submenu.Open;
 end;
 
 procedure TfrmPrincipal.imgMenuCloseClick(Sender: TObject);
@@ -205,12 +231,14 @@ begin
       menu.close;
       imgMenuClose.Visible := true;
       imgMenuOpen.Visible := false;
+      pnlLinha2.Visible := false;
     end
  else
   begin
     menu.Open;
     imgMenuOpen.Visible := true;
     imgMenuClose.Visible := false;
+    pnlLinha2.Visible := true;
   end;
 end;
 
@@ -232,9 +260,14 @@ begin
 
 end;
 
+procedure TfrmPrincipal.imgPDVClick(Sender: TObject);
+begin
+  frmPDV.Show;
+end;
+
 procedure TfrmPrincipal.imgSairClick(Sender: TObject);
 begin
-  if Application.MessageBox('Deseja Sair?', '  Confirme', MB_YESNO + MB_ICONQUESTION + MB_DEFBUTTON2) = id_yes then
+  if Application.MessageBox('Deseja Sair?', 'Confirme', MB_YESNO + MB_ICONQUESTION + MB_DEFBUTTON2) = id_yes then
         begin
           application.Terminate;
         end

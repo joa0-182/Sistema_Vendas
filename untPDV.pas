@@ -37,11 +37,6 @@ type
     Shape3: TShape;
     Label7: TLabel;
     imgProduto: TImage;
-    pnlSubTotal: TPanel;
-    Label8: TLabel;
-    Panel2: TPanel;
-    Shape4: TShape;
-    Label9: TLabel;
     pnlBtnFinalizar: TPanel;
     shpFinalizar: TShape;
     btnFinalizar: TSpeedButton;

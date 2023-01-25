@@ -1,6 +1,7 @@
 object frmPDV: TfrmPDV
   Left = 0
   Top = 0
+  Align = alClient
   Caption = 'PDV'
   ClientHeight = 701
   ClientWidth = 1122
@@ -11,6 +12,8 @@ object frmPDV: TfrmPDV
   Font.Name = 'Segoe UI'
   Font.Style = []
   OldCreateOrder = False
+  Position = poDesktopCenter
+  WindowState = wsMaximized
   PixelsPerInch = 96
   TextHeight = 21
   object pnlHeader: TPanel
@@ -23,7 +26,6 @@ object frmPDV: TfrmPDV
     Color = 2497806
     ParentBackground = False
     TabOrder = 0
-    ExplicitTop = -6
     object pnlLabel: TPanel
       Left = 0
       Top = 0
@@ -38,8 +40,6 @@ object frmPDV: TfrmPDV
       Color = 2497806
       ParentBackground = False
       TabOrder = 0
-      ExplicitLeft = 400
-      ExplicitWidth = 322
       object Label1: TLabel
         AlignWithMargins = True
         Left = 220
@@ -58,9 +58,8 @@ object frmPDV: TfrmPDV
         Font.Name = 'Segoe UI'
         Font.Style = [fsBold]
         ParentFont = False
-        ExplicitLeft = 223
-        ExplicitTop = 5
-        ExplicitWidth = 902
+        ExplicitWidth = 251
+        ExplicitHeight = 47
       end
       object pnlHoras: TPanel
         Left = 902
@@ -70,7 +69,6 @@ object frmPDV: TfrmPDV
         Align = alRight
         BevelOuter = bvNone
         TabOrder = 0
-        ExplicitLeft = 905
       end
       object pnlFuncionario: TPanel
         Left = 0
@@ -80,7 +78,6 @@ object frmPDV: TfrmPDV
         Align = alLeft
         BevelOuter = bvNone
         TabOrder = 1
-        ExplicitTop = -3
         object lblFuncionario: TLabel
           AlignWithMargins = True
           Left = 6
@@ -98,8 +95,6 @@ object frmPDV: TfrmPDV
           Font.Name = 'Segoe UI'
           Font.Style = []
           ParentFont = False
-          ExplicitLeft = 3
-          ExplicitTop = 28
           ExplicitWidth = 169
         end
         object Label10: TLabel
@@ -118,7 +113,6 @@ object frmPDV: TfrmPDV
           Font.Name = 'Segoe UI'
           Font.Style = []
           ParentFont = False
-          ExplicitTop = 3
           ExplicitWidth = 104
         end
       end
@@ -134,8 +128,6 @@ object frmPDV: TfrmPDV
     Color = 15921906
     ParentBackground = False
     TabOrder = 1
-    ExplicitLeft = -1
-    ExplicitTop = 54
     object DBGrid1: TDBGrid
       AlignWithMargins = True
       Left = 3
@@ -162,7 +154,6 @@ object frmPDV: TfrmPDV
     Color = 5940739
     ParentBackground = False
     TabOrder = 2
-    ExplicitWidth = 1124
     object pnlBtnFinalizar: TPanel
       AlignWithMargins = True
       Left = 902
@@ -173,7 +164,6 @@ object frmPDV: TfrmPDV
       Align = alRight
       BevelOuter = bvNone
       TabOrder = 0
-      ExplicitLeft = 904
       object shpFinalizar: TShape
         Left = 0
         Top = 0
@@ -192,6 +182,7 @@ object frmPDV: TfrmPDV
         Top = 0
         Width = 210
         Height = 55
+        Cursor = crHandPoint
         Align = alClient
         Caption = 'F12 - [ FINALIZAR ]'
         Flat = True
@@ -217,7 +208,6 @@ object frmPDV: TfrmPDV
       Align = alRight
       BevelOuter = bvNone
       TabOrder = 1
-      ExplicitLeft = 235
       object shpExcluirProd: TShape
         Left = 0
         Top = 0
@@ -236,6 +226,7 @@ object frmPDV: TfrmPDV
         Top = 0
         Width = 210
         Height = 55
+        Cursor = crHandPoint
         Align = alClient
         Caption = 'F7 - [ EXCLUIR PROD. ]'
         Flat = True
@@ -258,7 +249,6 @@ object frmPDV: TfrmPDV
       Align = alRight
       BevelOuter = bvNone
       TabOrder = 2
-      ExplicitLeft = 458
       object shpConsultaProd: TShape
         Left = 0
         Top = 0
@@ -277,6 +267,7 @@ object frmPDV: TfrmPDV
         Top = 0
         Width = 210
         Height = 55
+        Cursor = crHandPoint
         Align = alClient
         Caption = 'F8 - [ CONSULTA PROD. ]'
         Flat = True
@@ -304,7 +295,6 @@ object frmPDV: TfrmPDV
       Align = alRight
       BevelOuter = bvNone
       TabOrder = 3
-      ExplicitLeft = 681
       object shpPagamento: TShape
         Left = 0
         Top = 0
@@ -323,6 +313,7 @@ object frmPDV: TfrmPDV
         Top = 0
         Width = 210
         Height = 55
+        Cursor = crHandPoint
         Align = alClient
         Caption = 'F11 - [ PAGAMENTOS ]'
         Flat = True
@@ -349,7 +340,6 @@ object frmPDV: TfrmPDV
       Align = alRight
       BevelOuter = bvNone
       TabOrder = 4
-      ExplicitLeft = 12
       object shpAlterarProd: TShape
         Left = 0
         Top = 0
@@ -368,6 +358,7 @@ object frmPDV: TfrmPDV
         Top = 0
         Width = 210
         Height = 55
+        Cursor = crHandPoint
         Align = alClient
         Caption = 'F5 - [ ALTERAR PROD. ]'
         Flat = True
@@ -377,7 +368,7 @@ object frmPDV: TfrmPDV
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        ExplicitTop = 3
+        ExplicitLeft = 7
       end
     end
   end
@@ -393,7 +384,6 @@ object frmPDV: TfrmPDV
     Padding.Bottom = 20
     ParentBackground = False
     TabOrder = 3
-    ExplicitLeft = 834
     object pnlImgProduto: TPanel
       Left = 0
       Top = 5
@@ -502,7 +492,7 @@ object frmPDV: TfrmPDV
     object pnlProduto: TPanel
       AlignWithMargins = True
       Left = 5
-      Top = 218
+      Top = 288
       Width = 280
       Height = 60
       Margins.Left = 5
@@ -512,6 +502,7 @@ object frmPDV: TfrmPDV
       Align = alBottom
       BevelOuter = bvNone
       TabOrder = 2
+      ExplicitTop = 218
       object Label2: TLabel
         Left = 0
         Top = 0
@@ -580,7 +571,7 @@ object frmPDV: TfrmPDV
     object pnlPreco: TPanel
       AlignWithMargins = True
       Left = 5
-      Top = 288
+      Top = 358
       Width = 280
       Height = 60
       Margins.Left = 5
@@ -590,6 +581,7 @@ object frmPDV: TfrmPDV
       Align = alBottom
       BevelOuter = bvNone
       TabOrder = 3
+      ExplicitTop = 288
       object Label4: TLabel
         Left = 0
         Top = 0
@@ -658,7 +650,7 @@ object frmPDV: TfrmPDV
     object pnlQuantidade: TPanel
       AlignWithMargins = True
       Left = 5
-      Top = 358
+      Top = 428
       Width = 280
       Height = 60
       Margins.Left = 5
@@ -668,6 +660,7 @@ object frmPDV: TfrmPDV
       Align = alBottom
       BevelOuter = bvNone
       TabOrder = 4
+      ExplicitTop = 358
       object Label6: TLabel
         Left = 0
         Top = 0
@@ -721,92 +714,14 @@ object frmPDV: TfrmPDV
           Margins.Bottom = 0
           Align = alClient
           Alignment = taCenter
-          Caption = 'R$ 00,00'
+          Caption = '2'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = 16119285
           Font.Height = -24
           Font.Name = 'Segoe UI'
           Font.Style = [fsBold]
           ParentFont = False
-          ExplicitWidth = 100
-          ExplicitHeight = 32
-        end
-      end
-    end
-    object pnlSubTotal: TPanel
-      AlignWithMargins = True
-      Left = 5
-      Top = 428
-      Width = 280
-      Height = 60
-      Margins.Left = 5
-      Margins.Top = 5
-      Margins.Right = 5
-      Margins.Bottom = 5
-      Align = alBottom
-      BevelOuter = bvNone
-      TabOrder = 5
-      object Label8: TLabel
-        Left = 0
-        Top = 0
-        Width = 280
-        Height = 21
-        Align = alTop
-        Caption = 'Sub Total [ Compra ]'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -16
-        Font.Name = 'Segoe UI'
-        Font.Style = []
-        ParentFont = False
-        ExplicitWidth = 141
-      end
-      object Panel2: TPanel
-        Left = 0
-        Top = 21
-        Width = 280
-        Height = 39
-        Align = alClient
-        BevelOuter = bvNone
-        TabOrder = 0
-        object Shape4: TShape
-          AlignWithMargins = True
-          Left = 2
-          Top = 2
-          Width = 276
-          Height = 35
-          Margins.Left = 2
-          Margins.Top = 2
-          Margins.Right = 2
-          Margins.Bottom = 2
-          Align = alClient
-          Brush.Color = 7525636
-          Pen.Style = psClear
-          Shape = stRoundRect
-          ExplicitLeft = 0
-          ExplicitTop = 5
-          ExplicitHeight = 33
-        end
-        object Label9: TLabel
-          AlignWithMargins = True
-          Left = 0
-          Top = 2
-          Width = 280
-          Height = 37
-          Margins.Left = 0
-          Margins.Top = 2
-          Margins.Right = 0
-          Margins.Bottom = 0
-          Align = alClient
-          Alignment = taCenter
-          Caption = 'R$ 00,00'
-          Font.Charset = DEFAULT_CHARSET
-          Font.Color = 16119285
-          Font.Height = -24
-          Font.Name = 'Segoe UI'
-          Font.Style = [fsBold]
-          ParentFont = False
-          ExplicitWidth = 100
+          ExplicitWidth = 14
           ExplicitHeight = 32
         end
       end
