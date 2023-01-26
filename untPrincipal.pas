@@ -7,7 +7,7 @@ uses
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.Imaging.pngimage,
   Vcl.StdCtrls, Vcl.WinXCtrls, Vcl.CategoryButtons, Vcl.Buttons, System.Actions,
   Vcl.ActnList, System.ImageList, Vcl.ImgList, Vcl.Imaging.jpeg, untBase, TDI, untHomeTDI,
-  untCadastroClienteTDI, untCadastroProdutoTDI, untCadastroUsuarioTDI, untPDV;
+  untCadastroClienteTDI, untCadastroProdutoTDI, untCadastroUsuarioTDI, untPDV, untConfig;
 
 type
   TfrmPrincipal = class(TfrmBase)
@@ -25,11 +25,6 @@ type
     menu: TSplitView;
     pnlSair: TPanel;
     btnSair: TSpeedButton;
-    imgListFuncoes: TImageList;
-    actListFuncoes: TActionList;
-    Action1: TAction;
-    Action2: TAction;
-    Action3: TAction;
     submenu: TSplitView;
     pnlTituloSubMenu: TPanel;
     lblTituloSubMenu: TLabel;
@@ -50,8 +45,6 @@ type
     imgMenuOpen: TImage;
     imgUserHover: TImage;
     pnlLinha: TPanel;
-    Action4: TAction;
-    Action5: TAction;
     pnlConfig: TPanel;
     pnlImgConfig: TPanel;
     imgConfig: TImage;
@@ -69,6 +62,10 @@ type
     pnlImgCadastro: TPanel;
     imgCadastro: TImage;
     pnlLinha2: TPanel;
+    pnlHora: TPanel;
+    lblData: TLabel;
+    lblHora: TLabel;
+    Timer: TTimer;
     procedure Image1MouseEnter(Sender: TObject);
     procedure Image2MouseLeave(Sender: TObject);
     procedure Action2Execute(Sender: TObject);
@@ -95,6 +92,9 @@ type
     procedure btnCadClick(Sender: TObject);
     procedure imgCadastroClick(Sender: TObject);
     procedure imgPDVClick(Sender: TObject);
+    procedure TimerTimer(Sender: TObject);
+    procedure btnConfigClick(Sender: TObject);
+    procedure imgConfigClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -170,6 +170,11 @@ begin
   FTDI.MostrarFormulario(TfrmCadastroClienteTDI, false);
 end;
 
+procedure TfrmPrincipal.btnConfigClick(Sender: TObject);
+begin
+  frmConfig.Show;
+end;
+
 procedure TfrmPrincipal.btnPDVClick(Sender: TObject);
 begin
   frmPDV.Show;
@@ -224,6 +229,11 @@ begin
     submenu.Open;
 end;
 
+procedure TfrmPrincipal.imgConfigClick(Sender: TObject);
+begin
+  frmConfig.Show;
+end;
+
 procedure TfrmPrincipal.imgMenuCloseClick(Sender: TObject);
 begin
   if menu.Opened then
@@ -250,12 +260,14 @@ begin
       menu.close;
       imgMenuClose.Visible := true;
       imgMenuOpen.Visible := false;
+      pnlLinha2.Visible := false;
     end
  else
   begin
     menu.Open;
     imgMenuOpen.Visible := true;
     imgMenuClose.Visible := false;
+    pnlLinha2.Visible := true;
   end;
 
 end;
@@ -299,6 +311,14 @@ procedure TfrmPrincipal.imgUserMouseEnter(Sender: TObject);
 begin
   imgUserHover.Visible := true;
   imgUser.Visible := false;
+end;
+
+procedure TfrmPrincipal.TimerTimer(Sender: TObject);
+begin
+  inherited;
+  lblHora.Caption := TimeToStr(Time);
+  lblData.Caption := FormatDateTime('dddd', Date)+ (',')+ ( ' ' )+FormatDateTime('dd', Date)+
+                     (' de ')+ FormatDateTime('mmmm', Date)+ (' de ')+ FormatDateTime('yyyy', Date)
 end;
 
 end.

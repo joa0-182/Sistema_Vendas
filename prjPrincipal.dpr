@@ -16,7 +16,8 @@ uses
   untCadastroClienteTDI in 'untCadastroClienteTDI.pas' {frmCadastroClienteTDI},
   untPDV in 'untPDV.pas' {frmPDV},
   untCadastroProdutoTDI in 'untCadastroProdutoTDI.pas' {frmCadastroProdutoTDI},
-  untCadastroUsuarioTDI in 'untCadastroUsuarioTDI.pas' {frmCadastroUsuarioTDI};
+  untCadastroUsuarioTDI in 'untCadastroUsuarioTDI.pas' {frmCadastroUsuarioTDI},
+  untConfig in 'untConfig.pas' {frmConfig};
 
 {$R *.res}
 
@@ -27,5 +28,6 @@ begin
   Application.CreateForm(TfrmPDV, frmPDV);
   Application.CreateForm(TfrmCadastroProdutoTDI, frmCadastroProdutoTDI);
   Application.CreateForm(TfrmCadastroUsuarioTDI, frmCadastroUsuarioTDI);
+  Application.CreateForm(TfrmConfig, frmConfig);
   Application.Run;
 end.

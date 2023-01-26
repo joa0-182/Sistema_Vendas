@@ -285,4 +285,11 @@ inherited frmHomeTDI: TfrmHomeTDI
     ExplicitWidth = 105
     ExplicitHeight = 105
   end
+  object AbrirFundo: TOpenPictureDialog
+    FileName = 
+      'C:\Users\joao.maria\OneDrive\JPMSigma\Vendas JPM\Imagens\Fundos_' +
+      'Home'
+    Left = 208
+    Top = 88
+  end
 end

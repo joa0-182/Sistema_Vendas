@@ -1,0 +1,44 @@
+unit untConfig;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Imaging.pngimage,
+  Vcl.ExtCtrls, Vcl.Buttons;
+
+type
+  TfrmConfig = class(TForm)
+    Header: TPanel;
+    Fundo: TPanel;
+    pnlImg: TPanel;
+    Image1: TImage;
+    Label1: TLabel;
+    btnSair: TSpeedButton;
+    SpeedButton2: TSpeedButton;
+    procedure btnSairClick(Sender: TObject);
+    procedure SpeedButton2Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmConfig: TfrmConfig;
+
+implementation
+
+{$R *.dfm}
+
+procedure TfrmConfig.btnSairClick(Sender: TObject);
+begin
+  frmConfig.CloseModal;
+end;
+
+procedure TfrmConfig.SpeedButton2Click(Sender: TObject);
+begin
+  frmConfig.CloseModal;
+end;
+
+end.
