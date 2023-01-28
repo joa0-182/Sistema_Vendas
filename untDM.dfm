@@ -2,32 +2,30 @@ object DM: TDM
   OldCreateOrder = False
   Height = 487
   Width = 596
-  object TransationFundo: TIBTransaction
+  object conexao: TFDConnection
     Params.Strings = (
-      'read_committed'
-      'rec_version'
-      'nowait')
+      'Database=dotvenda'
+      'User_Name=root'
+      'DriverID=MySQL')
+    Connected = True
+    LoginPrompt = False
     Left = 520
-    Top = 416
+    Top = 424
   end
-  object Projeto_PDV: TIBDatabase
-    DefaultTransaction = TransationFundo
-    ServerType = 'IBServer'
-    Left = 440
-    Top = 416
+  object dsUsuario: TDataSource
+    Left = 152
+    Top = 88
   end
-  object Table_Logos: TIBTable
-    Database = Projeto_PDV
-    Transaction = TransationFundo
-    BufferChunks = 1000
-    CachedUpdates = False
-    UniDirectional = False
-    Left = 368
-    Top = 416
+  object qryUsuario: TFDQuery
+    Connection = conexao
+    SQL.Strings = (
+      'SELECT * FROM Usuario ')
+    Left = 80
+    Top = 88
   end
-  object dsLogos: TDataSource
-    DataSet = Table_Logos
-    Left = 296
-    Top = 416
+  object qryLogin: TFDQuery
+    Connection = conexao
+    Left = 80
+    Top = 24
   end
 end

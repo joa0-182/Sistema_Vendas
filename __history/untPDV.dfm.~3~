@@ -1,0 +1,103 @@
+object frmPDV: TfrmPDV
+  Left = 0
+  Top = 0
+  Caption = 'frmPDV'
+  ClientHeight = 446
+  ClientWidth = 690
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -16
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 21
+  object pnlHeader: TPanel
+    Left = 0
+    Top = 0
+    Width = 690
+    Height = 57
+    Align = alTop
+    BevelOuter = bvNone
+    Color = 2497806
+    ParentBackground = False
+    TabOrder = 0
+    ExplicitWidth = 652
+    object pnlLabel: TPanel
+      AlignWithMargins = True
+      Left = 200
+      Top = 0
+      Width = 290
+      Height = 57
+      Margins.Left = 200
+      Margins.Top = 0
+      Margins.Right = 200
+      Margins.Bottom = 0
+      Align = alTop
+      BevelOuter = bvNone
+      Color = 2497806
+      ParentBackground = False
+      TabOrder = 0
+      ExplicitLeft = 0
+      ExplicitWidth = 500
+      object Label1: TLabel
+        AlignWithMargins = True
+        Left = 0
+        Top = 3
+        Width = 290
+        Height = 54
+        Margins.Left = 0
+        Margins.Right = 0
+        Margins.Bottom = 0
+        Align = alClient
+        Alignment = taCenter
+        Caption = 'CAIXA ABERTO'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = 15921906
+        Font.Height = -35
+        Font.Name = 'Segoe UI'
+        Font.Style = [fsBold]
+        ParentFont = False
+        ExplicitTop = 7
+        ExplicitWidth = 251
+        ExplicitHeight = 47
+      end
+    end
+  end
+  object pnlBtn: TPanel
+    Left = 0
+    Top = 57
+    Width = 400
+    Height = 335
+    Align = alClient
+    BevelOuter = bvNone
+    Color = 15921906
+    ParentBackground = False
+    TabOrder = 1
+    ExplicitLeft = 408
+    ExplicitWidth = 282
+  end
+  object pnlGrid: TPanel
+    Left = 0
+    Top = 392
+    Width = 690
+    Height = 54
+    Align = alBottom
+    BevelOuter = bvNone
+    Color = 5940739
+    ParentBackground = False
+    TabOrder = 2
+  end
+  object pnlInformacoes: TPanel
+    Left = 400
+    Top = 57
+    Width = 290
+    Height = 335
+    Align = alRight
+    BevelOuter = bvNone
+    Color = 12303291
+    ParentBackground = False
+    TabOrder = 3
+  end
+end

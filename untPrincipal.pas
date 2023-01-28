@@ -7,7 +7,8 @@ uses
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.Imaging.pngimage,
   Vcl.StdCtrls, Vcl.WinXCtrls, Vcl.CategoryButtons, Vcl.Buttons, System.Actions,
   Vcl.ActnList, System.ImageList, Vcl.ImgList, Vcl.Imaging.jpeg, untBase, TDI, untHomeTDI,
-  untCadastroClienteTDI, untCadastroProdutoTDI, untCadastroUsuarioTDI, untPDV, untConfig;
+  untCadastroClienteTDI, untCadastroProdutoTDI, untCadastroUsuarioTDI, untPDV, untConfig,
+  untCadastroCargoTDI, untCadastroFormaPagTDI, untCadastroFornecedorTDI, untCadastroFuncionarioTDI;
 
 type
   TfrmPrincipal = class(TfrmBase)
@@ -29,15 +30,10 @@ type
     pnlTituloSubMenu: TPanel;
     lblTituloSubMenu: TLabel;
     FlowPanel1: TFlowPanel;
-    btnCliente: TSpeedButton;
-    btnProduto: TSpeedButton;
     btnUsuario: TSpeedButton;
     imgListIcons: TImageList;
     imgListImg: TActionList;
     pnlTDI: TPanel;
-    actCliente: TAction;
-    actProduto: TAction;
-    actUsuario: TAction;
     pnlSairImg: TPanel;
     imgSair: TImage;
     ImgSairHover: TImage;
@@ -66,19 +62,32 @@ type
     lblData: TLabel;
     lblHora: TLabel;
     Timer: TTimer;
+    Action1: TAction;
+    Action2: TAction;
+    Action3: TAction;
+    Action4: TAction;
+    Action5: TAction;
+    Action6: TAction;
+    Action7: TAction;
+    pnlLinha3: TPanel;
+    pnlLinha4: TPanel;
+    btnFuncionario: TSpeedButton;
+    btnCliente: TSpeedButton;
+    btnFornecedor: TSpeedButton;
+    btnCargo: TSpeedButton;
+    btnProduto: TSpeedButton;
+    btnFormaPag: TSpeedButton;
     procedure Image1MouseEnter(Sender: TObject);
     procedure Image2MouseLeave(Sender: TObject);
     procedure Action2Execute(Sender: TObject);
     procedure Action3Execute(Sender: TObject);
     procedure actClienteExecute(Sender: TObject);
     procedure actProdutoExecute(Sender: TObject);
-    procedure actUsuarioExecute(Sender: TObject);
     procedure Action7Execute(Sender: TObject);
     procedure Action8Execute(Sender: TObject);
     procedure Action9Execute(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure Image1MouseLeave(Sender: TObject);
-    procedure btnClienteClick(Sender: TObject);
     procedure imgSairClick(Sender: TObject);
     procedure ImgSairHoverMouseEnter(Sender: TObject);
     procedure imgSairMouseLeave(Sender: TObject);
@@ -95,6 +104,13 @@ type
     procedure TimerTimer(Sender: TObject);
     procedure btnConfigClick(Sender: TObject);
     procedure imgConfigClick(Sender: TObject);
+    procedure btnClienteClick(Sender: TObject);
+    procedure btnFornecedorClick(Sender: TObject);
+    procedure btnCargoClick(Sender: TObject);
+    procedure btnProdutoClick(Sender: TObject);
+    procedure btnFormaPagClick(Sender: TObject);
+    procedure btnUsuarioClick(Sender: TObject);
+    procedure btnFuncionarioClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -135,12 +151,6 @@ begin
   FTDI.MostrarFormulario(TfrmCadastroProdutoTDI, false);
 end;
 
-procedure TfrmPrincipal.actUsuarioExecute(Sender: TObject);
-begin
-  submenu.close;
-  FTDI.MostrarFormulario(TfrmCadastroUsuarioTDI, false);
-end;
-
 procedure TfrmPrincipal.Action7Execute(Sender: TObject);
 begin
   submenu.close;
@@ -164,20 +174,60 @@ begin
     submenu.Open;
 end;
 
-procedure TfrmPrincipal.btnClienteClick(Sender: TObject);
+procedure TfrmPrincipal.btnCargoClick(Sender: TObject);
 begin
   submenu.Close;
+  FTDI.MostrarFormulario(TfrmCadastroCargoTDI, false);
+end;
+
+procedure TfrmPrincipal.btnClienteClick(Sender: TObject);
+begin
+  submenu.close;
   FTDI.MostrarFormulario(TfrmCadastroClienteTDI, false);
 end;
 
 procedure TfrmPrincipal.btnConfigClick(Sender: TObject);
 begin
-  frmConfig.Show;
+  try
+    Application.CreateForm(TfrmConfig, frmConfig);
+      frmConfig.ShowModal;
+  finally
+    FreeAndNil(frmConfig);
+  end;
+end;
+
+procedure TfrmPrincipal.btnFormaPagClick(Sender: TObject);
+begin
+  submenu.close;
+  FTDI.MostrarFormulario(TfrmCadastroFormaPagTDI, false);
+end;
+
+procedure TfrmPrincipal.btnFornecedorClick(Sender: TObject);
+begin
+  submenu.Close;
+  FTDI.MostrarFormulario(TfrmCadastroFornecedorTDI, false);
+end;
+
+procedure TfrmPrincipal.btnFuncionarioClick(Sender: TObject);
+begin
+  submenu.Close;
+  FTDI.MostrarFormulario(TfrmCadastroFuncionarioTDI, false);
 end;
 
 procedure TfrmPrincipal.btnPDVClick(Sender: TObject);
 begin
-  frmPDV.Show;
+  try
+    Application.CreateForm(TfrmPDV, frmPDV);
+      frmPDV.ShowModal;
+  finally
+    FreeAndNil(frmPDV);
+  end;
+end;
+
+procedure TfrmPrincipal.btnProdutoClick(Sender: TObject);
+begin
+  submenu.close;
+  FTDI.MostrarFormulario(TfrmCadastroProdutoTDI, false);
 end;
 
 procedure TfrmPrincipal.btnSairClick(Sender: TObject);
@@ -191,6 +241,13 @@ begin
         begin
           abort;
         end;
+end;
+
+procedure TfrmPrincipal.btnUsuarioClick(Sender: TObject);
+begin
+  submenu.Close;
+  FTDI.MostrarFormulario(TfrmCadastroUsuarioTDI, false);
+
 end;
 
 procedure TfrmPrincipal.FormCreate(Sender: TObject);
@@ -231,7 +288,12 @@ end;
 
 procedure TfrmPrincipal.imgConfigClick(Sender: TObject);
 begin
-  frmConfig.Show;
+  try
+    Application.CreateForm(TfrmConfig, frmConfig);
+      frmConfig.ShowModal;
+  finally
+    FreeAndNil(frmConfig);
+  end;
 end;
 
 procedure TfrmPrincipal.imgMenuCloseClick(Sender: TObject);
@@ -274,7 +336,12 @@ end;
 
 procedure TfrmPrincipal.imgPDVClick(Sender: TObject);
 begin
-  frmPDV.Show;
+  try
+    Application.CreateForm(TfrmPDV, frmPDV);
+      frmPDV.ShowModal;
+  finally
+    FreeAndNil(frmPDV);
+  end;
 end;
 
 procedure TfrmPrincipal.imgSairClick(Sender: TObject);

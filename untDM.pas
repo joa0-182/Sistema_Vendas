@@ -13,10 +13,10 @@ uses
 
 type
   TDM = class(TDataModule)
-    TransationFundo: TIBTransaction;
-    Projeto_PDV: TIBDatabase;
-    Table_Logos: TIBTable;
-    dsLogos: TDataSource;
+    conexao: TFDConnection;
+    dsUsuario: TDataSource;
+    qryUsuario: TFDQuery;
+    qryLogin: TFDQuery;
   private
     { Private declarations }
   public

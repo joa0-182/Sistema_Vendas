@@ -17,7 +17,13 @@ uses
   untPDV in 'untPDV.pas' {frmPDV},
   untCadastroProdutoTDI in 'untCadastroProdutoTDI.pas' {frmCadastroProdutoTDI},
   untCadastroUsuarioTDI in 'untCadastroUsuarioTDI.pas' {frmCadastroUsuarioTDI},
-  untConfig in 'untConfig.pas' {frmConfig};
+  untConfig in 'untConfig.pas' {frmConfig},
+  Vcl.Themes,
+  Vcl.Styles,
+  untCadastroFuncionarioTDI in 'untCadastroFuncionarioTDI.pas' {frmCadastroFuncionarioTDI},
+  untCadastroFornecedorTDI in 'untCadastroFornecedorTDI.pas' {frmCadastroFornecedorTDI},
+  untCadastroCargoTDI in 'untCadastroCargoTDI.pas' {frmCadastroCargoTDI},
+  untCadastroFormaPagTDI in 'untCadastroFormaPagTDI.pas' {frmCadastroFormaPagTDI};
 
 {$R *.res}
 
@@ -25,9 +31,5 @@ begin
   Application.Initialize;
   Application.MainFormOnTaskbar := True;
   Application.CreateForm(TfrmPrincipal, frmPrincipal);
-  Application.CreateForm(TfrmPDV, frmPDV);
-  Application.CreateForm(TfrmCadastroProdutoTDI, frmCadastroProdutoTDI);
-  Application.CreateForm(TfrmCadastroUsuarioTDI, frmCadastroUsuarioTDI);
-  Application.CreateForm(TfrmConfig, frmConfig);
   Application.Run;
 end.
