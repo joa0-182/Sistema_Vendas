@@ -23,7 +23,10 @@ uses
   untCadastroFuncionarioTDI in 'untCadastroFuncionarioTDI.pas' {frmCadastroFuncionarioTDI},
   untCadastroFornecedorTDI in 'untCadastroFornecedorTDI.pas' {frmCadastroFornecedorTDI},
   untCadastroCargoTDI in 'untCadastroCargoTDI.pas' {frmCadastroCargoTDI},
-  untCadastroFormaPagTDI in 'untCadastroFormaPagTDI.pas' {frmCadastroFormaPagTDI};
+  untCadastroFormaPagTDI in 'untCadastroFormaPagTDI.pas' {frmCadastroFormaPagTDI},
+  untService.base in 'services\base\untService.base.pas' {ServiceBase: TDataModule},
+  untService.conexao in 'services\untService.conexao.pas' {ServiceConexao: TDataModule},
+  untService.Cadastro in 'services\untService.Cadastro.pas' {ServiceCadastro: TDataModule};
 
 {$R *.res}
 
@@ -31,5 +34,6 @@ begin
   Application.Initialize;
   Application.MainFormOnTaskbar := True;
   Application.CreateForm(TfrmPrincipal, frmPrincipal);
+  Application.CreateForm(TServiceConexao, ServiceConexao);
   Application.Run;
 end.

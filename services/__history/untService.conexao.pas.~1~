@@ -1,0 +1,25 @@
+unit untService.conexao;
+
+interface
+
+uses
+  System.SysUtils, System.Classes, untService.base;
+
+type
+  TServiceConexao = class(TServiceBase)
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  ServiceConexao: TServiceConexao;
+
+implementation
+
+{%CLASSGROUP 'Vcl.Controls.TControl'}
+
+{$R *.dfm}
+
+end.

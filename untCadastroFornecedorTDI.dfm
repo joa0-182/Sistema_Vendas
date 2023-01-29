@@ -20,7 +20,6 @@ inherited frmCadastroFornecedorTDI: TfrmCadastroFornecedorTDI
         inherited pnlCadastro: TPanel
           inherited lblCadastro: TLabel
             Width = 370
-            Height = 44
             Caption = '[ CADASTRO -> Fornecedor ]'
             ExplicitWidth = 370
           end

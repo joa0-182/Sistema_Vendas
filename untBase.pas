@@ -4,12 +4,18 @@ interface
 
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
-  Vcl.Controls, Vcl.Forms, Vcl.Dialogs;
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, untService.Cadastro;
 
 type
   TfrmBase = class(TForm)
+    procedure FormCreate(Sender: TObject);
+    procedure FormDestroy(Sender: TObject);
   private
     { Private declarations }
+
+  published
+    FService: TServiceCadastro;
+
   public
     { Public declarations }
   end;
@@ -20,5 +26,15 @@ var
 implementation
 
 {$R *.dfm}
+
+procedure TfrmBase.FormCreate(Sender: TObject);
+begin
+  FService := TServiceCadastro.Create(nil);
+end;
+
+procedure TfrmBase.FormDestroy(Sender: TObject);
+begin
+  FreeAndNil(FService);
+end;
 
 end.

@@ -10,6 +10,7 @@ uses
 
 type
   TfrmCadastroCargoTDI = class(TfrmBaseCadastroTDI)
+    procedure FormCreate(Sender: TObject);
   private
     { Private declarations }
   public
@@ -22,5 +23,11 @@ var
 implementation
 
 {$R *.dfm}
+
+procedure TfrmCadastroCargoTDI.FormCreate(Sender: TObject);
+begin
+  inherited;
+  frmCadastroCargoTDI := Self;
+end;
 
 end.

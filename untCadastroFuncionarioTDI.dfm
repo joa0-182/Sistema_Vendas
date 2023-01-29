@@ -20,7 +20,6 @@ inherited frmCadastroFuncionarioTDI: TfrmCadastroFuncionarioTDI
         inherited pnlCadastro: TPanel
           inherited lblCadastro: TLabel
             Width = 374
-            Height = 44
             Caption = '[ CADASTRO -> Funcion'#225'rio ]'
             ExplicitWidth = 374
           end

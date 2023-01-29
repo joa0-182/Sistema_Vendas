@@ -10,6 +10,7 @@ uses
 
 type
   TfrmCadastroFormaPagTDI = class(TfrmBaseCadastroTDI)
+    procedure FormCreate(Sender: TObject);
   private
     { Private declarations }
   public
@@ -22,5 +23,11 @@ var
 implementation
 
 {$R *.dfm}
+
+procedure TfrmCadastroFormaPagTDI.FormCreate(Sender: TObject);
+begin
+  inherited;
+  frmCadastroFormaPagTDI := Self;
+end;
 
 end.

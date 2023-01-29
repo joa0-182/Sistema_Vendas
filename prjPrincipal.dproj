@@ -169,6 +169,21 @@
             <Form>frmCadastroFormaPagTDI</Form>
             <FormType>dfm</FormType>
         </DCCReference>
+        <DCCReference Include="services\base\untService.base.pas">
+            <Form>ServiceBase</Form>
+            <FormType>dfm</FormType>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="services\untService.conexao.pas">
+            <Form>ServiceConexao</Form>
+            <FormType>dfm</FormType>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="services\untService.Cadastro.pas">
+            <Form>ServiceCadastro</Form>
+            <FormType>dfm</FormType>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>
@@ -192,15 +207,6 @@
                 <Excluded_Packages>
                     <Excluded_Packages Name="$(BDSBIN)\dcloffice2k270.bpl">Microsoft Office 2000 Sample Automation Server Wrapper Components</Excluded_Packages>
                     <Excluded_Packages Name="$(BDSBIN)\dclofficexp270.bpl">Microsoft Office XP Sample Automation Server Wrapper Components</Excluded_Packages>
-                    <Excluded_Packages Name="C:\Users\João Pedro\Desktop\usercontrol-sd-master\Lib\Delphi\LibD27\pckUCDataConnector.bpl">File C:\Users\João Pedro\Desktop\usercontrol-sd-master\Lib\Delphi\LibD27\pckUCDataConnector.bpl not found</Excluded_Packages>
-                    <Excluded_Packages Name="C:\Users\João Pedro\Desktop\usercontrol-sd-master\Lib\Delphi\LibD27\pckmd5.bpl">File C:\Users\João Pedro\Desktop\usercontrol-sd-master\Lib\Delphi\LibD27\pckmd5.bpl not found</Excluded_Packages>
-                    <Excluded_Packages Name="C:\Users\João Pedro\Desktop\usercontrol-sd-master\Lib\Delphi\LibD27\pckUserControl_RT.bpl">File C:\Users\João Pedro\Desktop\usercontrol-sd-master\Lib\Delphi\LibD27\pckUserControl_RT.bpl not found</Excluded_Packages>
-                    <Excluded_Packages Name="C:\Users\João Pedro\Desktop\usercontrol-sd-master\Lib\Delphi\LibD27\pckUserControl_DT.bpl">File C:\Users\João Pedro\Desktop\usercontrol-sd-master\Lib\Delphi\LibD27\pckUserControl_DT.bpl not found</Excluded_Packages>
-                    <Excluded_Packages Name="C:\Users\João Pedro\Desktop\usercontrol-sd-master\Lib\Delphi\LibD27\pckUCADOConn.bpl">File C:\Users\João Pedro\Desktop\usercontrol-sd-master\Lib\Delphi\LibD27\pckUCADOConn.bpl not found</Excluded_Packages>
-                    <Excluded_Packages Name="C:\Users\João Pedro\Desktop\usercontrol-sd-master\Lib\Delphi\LibD27\pckFireDacConn.bpl">File C:\Users\João Pedro\Desktop\usercontrol-sd-master\Lib\Delphi\LibD27\pckFireDacConn.bpl not found</Excluded_Packages>
-                    <Excluded_Packages Name="C:\Users\João Pedro\Desktop\usercontrol-sd-master\Lib\Delphi\LibD27\pckUCIBXConn.bpl">File C:\Users\João Pedro\Desktop\usercontrol-sd-master\Lib\Delphi\LibD27\pckUCIBXConn.bpl not found</Excluded_Packages>
-                    <Excluded_Packages Name="C:\Users\João Pedro\Desktop\usercontrol-sd-master\Lib\Delphi\LibD27\pckUCDBXConn.bpl">File C:\Users\João Pedro\Desktop\usercontrol-sd-master\Lib\Delphi\LibD27\pckUCDBXConn.bpl not found</Excluded_Packages>
-                    <Excluded_Packages Name="C:\Users\João Pedro\Desktop\usercontrol-sd-master\Lib\Delphi\LibD27\pckZeosConn.bpl">File C:\Users\João Pedro\Desktop\usercontrol-sd-master\Lib\Delphi\LibD27\pckZeosConn.bpl not found</Excluded_Packages>
                 </Excluded_Packages>
             </Delphi.Personality>
             <Deployment Version="3">

@@ -20,7 +20,6 @@ inherited frmCadastroProdutoTDI: TfrmCadastroProdutoTDI
         inherited pnlCadastro: TPanel
           inherited lblCadastro: TLabel
             Width = 329
-            Height = 44
             Caption = '[ CADASTRO -> Produto ]'
             ExplicitWidth = 329
           end

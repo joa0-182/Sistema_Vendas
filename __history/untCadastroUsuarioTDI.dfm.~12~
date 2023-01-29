@@ -1,0 +1,131 @@
+inherited frmCadastroUsuarioTDI: TfrmCadastroUsuarioTDI
+  Caption = 'Cadastro de Usuario do Sistema'
+  ExplicitLeft = -314
+  PixelsPerInch = 96
+  TextHeight = 21
+  inherited pnlFundo: TPanel
+    inherited CP_Cadastro: TCardPanel
+      inherited card_consulta: TCard
+        inherited pnlConsulta: TPanel
+          inherited pnlTitulo: TPanel
+            inherited lblConsulta: TLabel
+              Width = 331
+              Caption = '[ CONSULTA -> Usuarios ]'
+              ExplicitWidth = 331
+            end
+          end
+        end
+      end
+      inherited card_cadastro: TCard
+        inherited pnlFundoCad: TPanel
+          inherited pnlBaseCad: TPanel
+            ExplicitLeft = 15
+            ExplicitTop = 21
+            ExplicitHeight = 554
+            object Label1: TLabel
+              Left = 152
+              Top = 25
+              Width = 47
+              Height = 23
+              Caption = 'Nome'
+              FocusControl = DBEdit1
+              Font.Charset = ANSI_CHARSET
+              Font.Color = 4276545
+              Font.Height = -17
+              Font.Name = 'Segoe UI Semibold'
+              Font.Style = [fsBold]
+              ParentFont = False
+            end
+            object Label2: TLabel
+              Left = 616
+              Top = 27
+              Width = 47
+              Height = 23
+              Caption = 'Senha'
+              FocusControl = DBEdit2
+              Font.Charset = ANSI_CHARSET
+              Font.Color = 4276545
+              Font.Height = -17
+              Font.Name = 'Segoe UI Semibold'
+              Font.Style = [fsBold]
+              ParentFont = False
+            end
+            object Label3: TLabel
+              Left = 32
+              Top = 25
+              Width = 55
+              Height = 23
+              Caption = 'C'#243'digo'
+              FocusControl = DBEdit3
+              Font.Charset = ANSI_CHARSET
+              Font.Color = 4276545
+              Font.Height = -17
+              Font.Name = 'Segoe UI Semibold'
+              Font.Style = [fsBold]
+              ParentFont = False
+            end
+            object DBEdit1: TDBEdit
+              Left = 152
+              Top = 56
+              Width = 441
+              Height = 26
+              DataField = 'nome_usuario'
+              Font.Charset = ANSI_CHARSET
+              Font.Color = 5395026
+              Font.Height = -15
+              Font.Name = 'Tahoma'
+              Font.Style = []
+              ParentFont = False
+              TabOrder = 0
+            end
+            object DBEdit2: TDBEdit
+              Left = 616
+              Top = 56
+              Width = 193
+              Height = 26
+              DataField = 'senha_usuario'
+              Font.Charset = ANSI_CHARSET
+              Font.Color = 5395026
+              Font.Height = -15
+              Font.Name = 'Tahoma'
+              Font.Style = []
+              ParentFont = False
+              TabOrder = 1
+            end
+            object DBEdit3: TDBEdit
+              Left = 32
+              Top = 56
+              Width = 89
+              Height = 26
+              DataField = 'id_usuario'
+              Font.Charset = ANSI_CHARSET
+              Font.Color = 5395026
+              Font.Height = -15
+              Font.Name = 'Tahoma'
+              Font.Style = []
+              ParentFont = False
+              ReadOnly = True
+              TabOrder = 2
+            end
+          end
+        end
+        inherited pnlHeaderTop: TPanel
+          ExplicitTop = -3
+          inherited lblCadastro: TLabel
+            Width = 323
+            Caption = '[ CADASTRO -> Usuario ]'
+            ExplicitTop = 6
+            ExplicitWidth = 323
+          end
+          inherited pnlVoltar: TPanel
+            Color = 14540253
+          end
+        end
+      end
+    end
+  end
+  inherited dsDados: TDataSource
+    Left = 592
+    Top = 192
+  end
+end

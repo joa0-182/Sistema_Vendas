@@ -1,0 +1,55 @@
+inherited ServiceCadastro: TServiceCadastro
+  Height = 385
+  Width = 688
+  inherited FDConexao: TFDConnection
+    Connected = True
+    Left = 32
+    Top = 24
+  end
+  inherited FDScript1: TFDScript
+    Left = 32
+    Top = 80
+  end
+  inherited FDPhysMySQLDriverLink1: TFDPhysMySQLDriverLink
+    VendorLib = 'C:\Users\Jo'#227'o Pedro\OneDrive\JPMSigma\Vendas JPM\libmysql.dll'
+    Left = 608
+    Top = 24
+  end
+  inherited FDGUIxWaitCursor1: TFDGUIxWaitCursor
+    Left = 608
+    Top = 80
+  end
+  object qryUsuario: TFDQuery
+    Active = True
+    Connection = FDConexao
+    SQL.Strings = (
+      'SELECT * FROM Usuario;')
+    Left = 32
+    Top = 184
+    object qryUsuarioid_usuario: TFDAutoIncField
+      Alignment = taLeftJustify
+      DisplayLabel = 'C'#243'digo'
+      DisplayWidth = 15
+      FieldName = 'id_usuario'
+      Origin = 'id_usuario'
+      ProviderFlags = [pfInWhere, pfInKey]
+      ReadOnly = True
+    end
+    object qryUsuarionome_usuario: TStringField
+      DisplayLabel = 'Nome'
+      DisplayWidth = 50
+      FieldName = 'nome_usuario'
+      Origin = 'Nome'
+      Required = True
+      Size = 50
+    end
+    object qryUsuariosenha_usuario: TStringField
+      DisplayLabel = 'Senha'
+      DisplayWidth = 30
+      FieldName = 'senha_usuario'
+      Origin = 'Senha'
+      Required = True
+      Size = 30
+    end
+  end
+end

@@ -13,10 +13,6 @@ uses
 
 type
   TDM = class(TDataModule)
-    conexao: TFDConnection;
-    dsUsuario: TDataSource;
-    qryUsuario: TFDQuery;
-    qryLogin: TFDQuery;
   private
     { Private declarations }
   public

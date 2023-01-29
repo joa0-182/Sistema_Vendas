@@ -1,0 +1,44 @@
+unit untService.Cadastro;
+
+interface
+
+uses
+  System.SysUtils, System.Classes, untService.conexao, FireDAC.Stan.Intf,
+  FireDAC.Stan.Option, FireDAC.Stan.Error, FireDAC.UI.Intf, FireDAC.Phys.Intf,
+  FireDAC.Stan.Def, FireDAC.Stan.Pool, FireDAC.Stan.Async, FireDAC.Phys,
+  FireDAC.Phys.MySQL, FireDAC.Phys.MySQLDef, FireDAC.Comp.ScriptCommands,
+  FireDAC.Stan.Util, FireDAC.VCLUI.Wait, FireDAC.Comp.UI, FireDAC.Comp.Script,
+  Data.DB, FireDAC.Comp.Client;
+
+type
+  TServiceCadastro = class(TServiceConexao)
+    procedure DataModuleCreate(Sender: TObject);
+    procedure DataModuleDestroy(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  ServiceCadastro: TServiceCadastro;
+
+implementation
+
+{%CLASSGROUP 'Vcl.Controls.TControl'}
+
+{$R *.dfm}
+
+procedure TServiceCadastro.DataModuleCreate(Sender: TObject);
+begin
+  inherited;
+  FService := TServiceCadastro.Create(nil);
+end;
+
+procedure TServiceCadastro.DataModuleDestroy(Sender: TObject);
+begin
+  inherited;
+  FreeAndNil(FService);
+end;
+
+end.
