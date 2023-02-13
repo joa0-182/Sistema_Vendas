@@ -1,0 +1,29 @@
+unit untControlEstoque;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, untBaseTDI, Vcl.WinXPanels, Vcl.ExtCtrls;
+
+type
+  TfrmControlEstoque = class(TfrmBaseTDI)
+    pnlFundo: TPanel;
+    CP_Estoque: TCardPanel;
+    consulta_mov: TCard;
+    cadastro_mov: TCard;
+    Panel1: TPanel;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmControlEstoque: TfrmControlEstoque;
+
+implementation
+
+{$R *.dfm}
+
+end.

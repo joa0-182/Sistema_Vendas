@@ -9,7 +9,6 @@ inherited frmCadastroFormaPagTDI: TfrmCadastroFormaPagTDI
           inherited pnlTitulo: TPanel
             inherited lblConsulta: TLabel
               Width = 488
-              Height = 37
               Caption = '[ CONSULTA -> Forma de Pagamento]'
               ExplicitWidth = 488
             end
@@ -17,9 +16,10 @@ inherited frmCadastroFormaPagTDI: TfrmCadastroFormaPagTDI
         end
       end
       inherited card_cadastro: TCard
-        inherited pnlCadastro: TPanel
+        inherited pnlHeaderTop: TPanel
           inherited lblCadastro: TLabel
             Width = 500
+            Height = 49
             Caption = '[ CADASTRO -> Forma de Pagamento ]'
             ExplicitWidth = 500
           end

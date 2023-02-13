@@ -17,9 +17,10 @@ inherited frmCadastroCargoTDI: TfrmCadastroCargoTDI
         end
       end
       inherited card_cadastro: TCard
-        inherited pnlCadastro: TPanel
+        inherited pnlHeaderTop: TPanel
           inherited lblCadastro: TLabel
             Width = 283
+            Height = 49
             Caption = '[ CADASTRO - Cargo ]'
             ExplicitWidth = 283
           end

@@ -9,7 +9,6 @@ inherited frmCadastroClienteTDI: TfrmCadastroClienteTDI
           inherited pnlTitulo: TPanel
             inherited lblConsulta: TLabel
               Width = 322
-              Height = 37
               Caption = '[ CONSULTA -> Clientes ]'
               ExplicitWidth = 322
             end
@@ -17,9 +16,10 @@ inherited frmCadastroClienteTDI: TfrmCadastroClienteTDI
         end
       end
       inherited card_cadastro: TCard
-        inherited pnlCadastro: TPanel
+        inherited pnlHeaderTop: TPanel
           inherited lblCadastro: TLabel
             Width = 314
+            Height = 49
             Caption = '[ CADASTRO -> Cliente ]'
             ExplicitWidth = 314
           end

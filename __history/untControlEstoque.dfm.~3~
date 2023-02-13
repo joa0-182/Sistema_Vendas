@@ -1,0 +1,51 @@
+inherited frmControlEstoque: TfrmControlEstoque
+  Caption = 'frmControlEstoque'
+  PixelsPerInch = 96
+  TextHeight = 21
+  object pnlFundo: TPanel
+    Left = 0
+    Top = 0
+    Width = 768
+    Height = 554
+    Align = alClient
+    BevelOuter = bvNone
+    TabOrder = 0
+    object CP_Estoque: TCardPanel
+      Left = 0
+      Top = 0
+      Width = 768
+      Height = 554
+      Align = alClient
+      ActiveCard = consulta_mov
+      BevelOuter = bvNone
+      TabOrder = 0
+      object consulta_mov: TCard
+        Left = 0
+        Top = 0
+        Width = 768
+        Height = 554
+        Caption = 'consulta'
+        CardIndex = 0
+        TabOrder = 0
+        object Panel1: TPanel
+          Left = 0
+          Top = 0
+          Width = 768
+          Height = 89
+          Align = alTop
+          BevelOuter = bvNone
+          TabOrder = 0
+        end
+      end
+      object cadastro_mov: TCard
+        Left = 0
+        Top = 0
+        Width = 768
+        Height = 554
+        Caption = 'cadastro'
+        CardIndex = 1
+        TabOrder = 1
+      end
+    end
+  end
+end

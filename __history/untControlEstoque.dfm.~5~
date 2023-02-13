@@ -1,0 +1,90 @@
+inherited frmControlEstoque: TfrmControlEstoque
+  Caption = 'frmControlEstoque'
+  ExplicitLeft = -74
+  PixelsPerInch = 96
+  TextHeight = 21
+  object pnlFundo: TPanel
+    Left = 0
+    Top = 0
+    Width = 768
+    Height = 554
+    Align = alClient
+    BevelOuter = bvNone
+    TabOrder = 0
+    object CP_Estoque: TCardPanel
+      Left = 0
+      Top = 0
+      Width = 768
+      Height = 554
+      Align = alClient
+      ActiveCard = consulta_mov
+      BevelOuter = bvNone
+      TabOrder = 0
+      object consulta_mov: TCard
+        Left = 0
+        Top = 0
+        Width = 768
+        Height = 554
+        Caption = 'consulta'
+        CardIndex = 0
+        TabOrder = 0
+        object pnlHeaderTop: TPanel
+          Left = 0
+          Top = 0
+          Width = 768
+          Height = 73
+          Align = alTop
+          BevelOuter = bvNone
+          Color = 14540253
+          ParentBackground = False
+          TabOrder = 0
+          object pnlTitulo: TPanel
+            Left = 0
+            Top = 0
+            Width = 768
+            Height = 73
+            Align = alClient
+            BevelOuter = bvNone
+            TabOrder = 0
+            ExplicitLeft = 380
+            ExplicitTop = -5
+            ExplicitWidth = 391
+            object lblConsulta: TLabel
+              AlignWithMargins = True
+              Left = 2
+              Top = 12
+              Width = 764
+              Height = 59
+              Margins.Left = 2
+              Margins.Top = 12
+              Margins.Right = 2
+              Margins.Bottom = 2
+              Align = alClient
+              Alignment = taCenter
+              Caption = 'CONSULTA DE MOVIMENTA'#199#213'ES'
+              Color = 8026746
+              Font.Charset = ANSI_CHARSET
+              Font.Color = 2960685
+              Font.Height = -32
+              Font.Name = 'Segoe UI'
+              Font.Style = [fsBold]
+              ParentColor = False
+              ParentFont = False
+              ExplicitWidth = 501
+              ExplicitHeight = 45
+            end
+          end
+        end
+      end
+      object cadastro_mov: TCard
+        Left = 0
+        Top = 0
+        Width = 768
+        Height = 554
+        Caption = 'cadastro'
+        CardIndex = 1
+        TabOrder = 1
+      end
+    end
+  end
+end

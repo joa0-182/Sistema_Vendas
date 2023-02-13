@@ -26,7 +26,8 @@ uses
   untCadastroFormaPagTDI in 'untCadastroFormaPagTDI.pas' {frmCadastroFormaPagTDI},
   untService.base in 'services\base\untService.base.pas' {ServiceBase: TDataModule},
   untService.conexao in 'services\untService.conexao.pas' {ServiceConexao: TDataModule},
-  untService.Cadastro in 'services\untService.Cadastro.pas' {ServiceCadastro: TDataModule};
+  untService.Cadastro in 'services\untService.Cadastro.pas' {ServiceCadastro: TDataModule},
+  untControlEstoque in 'untControlEstoque.pas' {frmControlEstoque};
 
 {$R *.res}
 
@@ -35,5 +36,6 @@ begin
   Application.MainFormOnTaskbar := True;
   Application.CreateForm(TfrmPrincipal, frmPrincipal);
   Application.CreateForm(TServiceConexao, ServiceConexao);
+  Application.CreateForm(TfrmControlEstoque, frmControlEstoque);
   Application.Run;
 end.

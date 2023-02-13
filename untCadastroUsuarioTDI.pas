@@ -12,7 +12,6 @@ type
   TfrmCadastroUsuarioTDI = class(TfrmBaseCadastroTDI)
     Label1: TLabel;
     DBEdit1: TDBEdit;
-    DataSource1: TDataSource;
     Label2: TLabel;
     DBEdit2: TDBEdit;
     Label3: TLabel;

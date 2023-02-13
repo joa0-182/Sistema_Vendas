@@ -1,0 +1,39 @@
+program prjPrincipal;
+
+uses
+  Vcl.Forms,
+  untPrincipal in 'untPrincipal.pas' {frmPrincipal},
+  untLogin in 'untLogin.pas' {frmLogin},
+  untDM in 'untDM.pas' {DM: TDataModule},
+  untBase in 'untBase.pas' {frmBase},
+  untBaseTDI in 'untBaseTDI.pas' {frmBaseTDI},
+  PageControlEx in '_terceiro\TDI\PageControlEx.pas',
+  TabCloseButton in '_terceiro\TDI\TabCloseButton.pas',
+  TDI in '_terceiro\TDI\TDI.pas',
+  VisualizaImagensDasGuiasAbertas in '_terceiro\TDI\VisualizaImagensDasGuiasAbertas.pas',
+  untHomeTDI in 'untHomeTDI.pas' {frmHomeTDI},
+  untCadastroBaseTDI in 'untCadastroBaseTDI.pas' {frmBaseCadastroTDI},
+  untCadastroClienteTDI in 'untCadastroClienteTDI.pas' {frmCadastroClienteTDI},
+  untPDV in 'untPDV.pas' {frmPDV},
+  untCadastroProdutoTDI in 'untCadastroProdutoTDI.pas' {frmCadastroProdutoTDI},
+  untCadastroUsuarioTDI in 'untCadastroUsuarioTDI.pas' {frmCadastroUsuarioTDI},
+  untConfig in 'untConfig.pas' {frmConfig},
+  Vcl.Themes,
+  Vcl.Styles,
+  untCadastroFuncionarioTDI in 'untCadastroFuncionarioTDI.pas' {frmCadastroFuncionarioTDI},
+  untCadastroFornecedorTDI in 'untCadastroFornecedorTDI.pas' {frmCadastroFornecedorTDI},
+  untCadastroCargoTDI in 'untCadastroCargoTDI.pas' {frmCadastroCargoTDI},
+  untCadastroFormaPagTDI in 'untCadastroFormaPagTDI.pas' {frmCadastroFormaPagTDI},
+  untService.base in 'services\base\untService.base.pas' {ServiceBase: TDataModule},
+  untService.conexao in 'services\untService.conexao.pas' {ServiceConexao: TDataModule},
+  untService.Cadastro in 'services\untService.Cadastro.pas' {ServiceCadastro: TDataModule};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TfrmPrincipal, frmPrincipal);
+  Application.CreateForm(TServiceConexao, ServiceConexao);
+  Application.Run;
+end.

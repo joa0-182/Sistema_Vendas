@@ -27,6 +27,7 @@ inherited ServiceCadastro: TServiceCadastro
     Left = 32
     Top = 184
     object qryUsuarioid_usuario: TFDAutoIncField
+      Alignment = taLeftJustify
       FieldName = 'id_usuario'
       Origin = 'id_usuario'
       ProviderFlags = [pfInWhere, pfInKey]

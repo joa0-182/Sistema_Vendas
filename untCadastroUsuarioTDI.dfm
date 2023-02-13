@@ -21,56 +21,78 @@ inherited frmCadastroUsuarioTDI: TfrmCadastroUsuarioTDI
           ExplicitTop = 57
           ExplicitHeight = 594
           inherited pnlBaseCad: TPanel
+            ExplicitLeft = 26
             ExplicitHeight = 554
             object Label1: TLabel
-              Left = 56
-              Top = 77
-              Width = 72
-              Height = 21
-              Caption = 'id_usuario'
+              Left = 32
+              Top = 21
+              Width = 55
+              Height = 23
+              Caption = 'C'#243'digo'
               FocusControl = DBEdit1
+              Font.Charset = ANSI_CHARSET
+              Font.Color = 4605510
+              Font.Height = -17
+              Font.Name = 'Segoe UI Semibold'
+              Font.Style = [fsBold]
+              ParentFont = False
             end
             object Label2: TLabel
-              Left = 56
-              Top = 136
-              Width = 99
-              Height = 21
-              Caption = 'nome_usuario'
+              Left = 120
+              Top = 21
+              Width = 47
+              Height = 23
+              Caption = 'Nome'
               FocusControl = DBEdit2
+              Font.Charset = ANSI_CHARSET
+              Font.Color = 4605510
+              Font.Height = -17
+              Font.Name = 'Segoe UI Semibold'
+              Font.Style = [fsBold]
+              ParentFont = False
             end
             object Label3: TLabel
-              Left = 56
-              Top = 192
-              Width = 100
-              Height = 21
-              Caption = 'senha_usuario'
+              Left = 464
+              Top = 21
+              Width = 47
+              Height = 23
+              Caption = 'Senha'
               FocusControl = DBEdit3
+              Font.Charset = ANSI_CHARSET
+              Font.Color = 4605510
+              Font.Height = -17
+              Font.Name = 'Segoe UI Semibold'
+              Font.Style = [fsBold]
+              ParentFont = False
             end
             object DBEdit1: TDBEdit
-              Left = 56
-              Top = 104
-              Width = 214
+              Left = 32
+              Top = 50
+              Width = 49
               Height = 29
               DataField = 'id_usuario'
-              DataSource = DataSource1
+              Font.Charset = ANSI_CHARSET
+              Font.Color = 5395026
+              Font.Height = -16
+              Font.Name = 'Segoe UI'
+              Font.Style = []
+              ParentFont = False
               TabOrder = 0
             end
             object DBEdit2: TDBEdit
-              Left = 56
-              Top = 160
-              Width = 1054
+              Left = 120
+              Top = 50
+              Width = 300
               Height = 29
               DataField = 'nome_usuario'
-              DataSource = DataSource1
               TabOrder = 1
             end
             object DBEdit3: TDBEdit
-              Left = 56
-              Top = 216
-              Width = 634
+              Left = 464
+              Top = 48
+              Width = 163
               Height = 29
               DataField = 'senha_usuario'
-              DataSource = DataSource1
               TabOrder = 2
             end
           end
@@ -93,10 +115,5 @@ inherited frmCadastroUsuarioTDI: TfrmCadastroUsuarioTDI
   inherited dsDados: TDataSource
     Left = 592
     Top = 192
-  end
-  object DataSource1: TDataSource
-    DataSet = ServiceCadastro.qryUsuario
-    Left = 496
-    Top = 360
   end
 end

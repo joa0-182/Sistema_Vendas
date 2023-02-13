@@ -8,7 +8,8 @@ uses
   Vcl.StdCtrls, Vcl.WinXCtrls, Vcl.CategoryButtons, Vcl.Buttons, System.Actions,
   Vcl.ActnList, System.ImageList, Vcl.ImgList, Vcl.Imaging.jpeg, untBase, TDI, untHomeTDI,
   untCadastroClienteTDI, untCadastroProdutoTDI, untCadastroUsuarioTDI, untPDV, untConfig,
-  untCadastroCargoTDI, untCadastroFormaPagTDI, untCadastroFornecedorTDI, untCadastroFuncionarioTDI;
+  untCadastroCargoTDI, untCadastroFormaPagTDI, untCadastroFornecedorTDI, untCadastroFuncionarioTDI,
+  untControlEstoque;
 
 type
   TfrmPrincipal = class(TfrmBase)
@@ -111,6 +112,8 @@ type
     procedure btnFormaPagClick(Sender: TObject);
     procedure btnUsuarioClick(Sender: TObject);
     procedure btnFuncionarioClick(Sender: TObject);
+    procedure btnEstoqueClick(Sender: TObject);
+    procedure imgEstoqueClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -194,6 +197,11 @@ begin
   finally
     FreeAndNil(frmConfig);
   end;
+end;
+
+procedure TfrmPrincipal.btnEstoqueClick(Sender: TObject);
+begin
+  FTDI.MostrarFormulario(TfrmControlEstoque, false);
 end;
 
 procedure TfrmPrincipal.btnFormaPagClick(Sender: TObject);
@@ -294,6 +302,11 @@ begin
   finally
     FreeAndNil(frmConfig);
   end;
+end;
+
+procedure TfrmPrincipal.imgEstoqueClick(Sender: TObject);
+begin
+  FTDI.MostrarFormulario(TfrmControlEstoque, false);
 end;
 
 procedure TfrmPrincipal.imgMenuCloseClick(Sender: TObject);

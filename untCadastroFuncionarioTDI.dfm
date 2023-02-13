@@ -9,7 +9,6 @@ inherited frmCadastroFuncionarioTDI: TfrmCadastroFuncionarioTDI
           inherited pnlTitulo: TPanel
             inherited lblConsulta: TLabel
               Width = 382
-              Height = 37
               Caption = '[ CONSULTA  -> Funcion'#225'rios]'
               ExplicitWidth = 382
             end
@@ -17,9 +16,10 @@ inherited frmCadastroFuncionarioTDI: TfrmCadastroFuncionarioTDI
         end
       end
       inherited card_cadastro: TCard
-        inherited pnlCadastro: TPanel
+        inherited pnlHeaderTop: TPanel
           inherited lblCadastro: TLabel
             Width = 374
+            Height = 49
             Caption = '[ CADASTRO -> Funcion'#225'rio ]'
             ExplicitWidth = 374
           end

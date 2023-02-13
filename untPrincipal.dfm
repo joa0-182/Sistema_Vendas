@@ -913,6 +913,7 @@ object frmPrincipal: TfrmPrincipal
         Font.Name = 'Segoe UI'
         Font.Style = []
         ParentFont = False
+        OnClick = btnEstoqueClick
         ExplicitLeft = 52
         ExplicitTop = 3
       end
@@ -967,6 +968,7 @@ object frmPrincipal: TfrmPrincipal
             F3C0A0103028040C0A018342C0A0103028040C0A01E3378018B383665F5B9B00
             00000049454E44AE426082}
           Proportional = True
+          OnClick = imgEstoqueClick
           ExplicitLeft = 3
           ExplicitWidth = 39
         end
@@ -1246,7 +1248,6 @@ object frmPrincipal: TfrmPrincipal
       Color = 8019756
       ParentBackground = False
       TabOrder = 0
-      ExplicitWidth = 260
       object lblTituloSubMenu: TLabel
         AlignWithMargins = True
         Left = 3
@@ -1275,9 +1276,6 @@ object frmPrincipal: TfrmPrincipal
       Align = alClient
       BevelOuter = bvNone
       TabOrder = 1
-      ExplicitLeft = 3
-      ExplicitTop = 60
-      ExplicitWidth = 260
       object btnUsuario: TSpeedButton
         AlignWithMargins = True
         Left = 2
@@ -1502,8 +1500,6 @@ object frmPrincipal: TfrmPrincipal
     Color = 15921906
     ParentBackground = False
     TabOrder = 3
-    ExplicitLeft = 48
-    ExplicitTop = 74
   end
   object imgListIcons: TImageList
     ColorDepth = cd32Bit

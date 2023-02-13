@@ -4,8 +4,8 @@
     <Transaction>2022/12/30 08:24:07.000.444,=C:\Users\joao.maria\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
     <Transaction>2022/12/30 10:55:05.000.531,=C:\Users\joao.maria\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
     <Transaction>2023/01/02 09:21:12.000.294,=C:\Users\joao.maria\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2023/01/02 09:21:28.000.825,C:\Users\joao.maria\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.dfm=C:\Users\joao.maria\Desktop\Vendas JPM\untPrincipal.dfm</Transaction>
     <Transaction>2023/01/02 09:21:28.000.825,C:\Users\joao.maria\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\joao.maria\Desktop\Vendas JPM\untPrincipal.pas</Transaction>
+    <Transaction>2023/01/02 09:21:28.000.825,C:\Users\joao.maria\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.dfm=C:\Users\joao.maria\Desktop\Vendas JPM\untPrincipal.dfm</Transaction>
     <Transaction>2023/01/02 09:21:34.000.159,C:\Users\joao.maria\OneDrive\Documentos\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\joao.maria\Desktop\Vendas JPM\prjPrincipal.dproj</Transaction>
     <Transaction>2023/01/02 09:22:31.000.639,=C:\Users\joao.maria\Desktop\Vendas JPM\Unit2.pas</Transaction>
     <Transaction>2023/01/02 09:22:41.000.328,C:\Users\joao.maria\Desktop\Vendas JPM\Unit2.pas=C:\Users\joao.maria\Desktop\Vendas JPM\untLogin.pas</Transaction>
@@ -14,21 +14,21 @@
     <Transaction>2023/01/02 11:54:50.000.432,C:\Users\joao.maria\Desktop\Vendas JPM\DM.dfm=C:\Users\joao.maria\Desktop\Vendas JPM\Unit1.dfm</Transaction>
     <Transaction>2023/01/02 11:54:50.000.432,C:\Users\joao.maria\Desktop\Vendas JPM\DM.pas=C:\Users\joao.maria\Desktop\Vendas JPM\Unit1.pas</Transaction>
     <Transaction>2023/01/18 15:44:48.000.203,=C:\Users\joao.maria\OneDrive\JPMSigma\Vendas JPM\Unit1.pas</Transaction>
-    <Transaction>2023/01/18 15:45:04.000.594,C:\Users\joao.maria\OneDrive\JPMSigma\Vendas JPM\Unit1.pas=C:\Users\joao.maria\OneDrive\JPMSigma\Vendas JPM\untBase.pas</Transaction>
     <Transaction>2023/01/18 15:45:04.000.594,C:\Users\joao.maria\OneDrive\JPMSigma\Vendas JPM\Unit1.dfm=C:\Users\joao.maria\OneDrive\JPMSigma\Vendas JPM\untBase.dfm</Transaction>
+    <Transaction>2023/01/18 15:45:04.000.594,C:\Users\joao.maria\OneDrive\JPMSigma\Vendas JPM\Unit1.pas=C:\Users\joao.maria\OneDrive\JPMSigma\Vendas JPM\untBase.pas</Transaction>
     <Transaction>2023/01/18 16:33:40.000.768,=C:\Users\joao.maria\OneDrive\JPMSigma\Vendas JPM\Unit1.pas</Transaction>
     <Transaction>2023/01/18 16:33:55.000.646,C:\Users\joao.maria\OneDrive\JPMSigma\Vendas JPM\Unit1.pas=C:\Users\joao.maria\OneDrive\JPMSigma\Vendas JPM\untBaseTDI.pas</Transaction>
     <Transaction>2023/01/18 16:33:55.000.646,C:\Users\joao.maria\OneDrive\JPMSigma\Vendas JPM\Unit1.dfm=C:\Users\joao.maria\OneDrive\JPMSigma\Vendas JPM\untBaseTDI.dfm</Transaction>
     <Transaction>2023/01/18 16:35:48.000.694,=C:\Users\joao.maria\OneDrive\JPMSigma\Vendas JPM\Unit1.pas</Transaction>
-    <Transaction>2023/01/18 16:36:41.000.408,C:\Users\joao.maria\OneDrive\JPMSigma\Vendas JPM\Unit1.dfm=C:\Users\joao.maria\OneDrive\JPMSigma\Vendas JPM\untCadClienteTDI.dfm</Transaction>
     <Transaction>2023/01/18 16:36:41.000.408,C:\Users\joao.maria\OneDrive\JPMSigma\Vendas JPM\Unit1.pas=C:\Users\joao.maria\OneDrive\JPMSigma\Vendas JPM\untCadClienteTDI.pas</Transaction>
-    <Transaction>2023/01/18 16:38:55.000.974,=C:\Users\joao.maria\OneDrive\JPMSigma\Vendas JPM\_terceiro\TDI\VisualizaImagensDasGuiasAbertas.pas</Transaction>
+    <Transaction>2023/01/18 16:36:41.000.408,C:\Users\joao.maria\OneDrive\JPMSigma\Vendas JPM\Unit1.dfm=C:\Users\joao.maria\OneDrive\JPMSigma\Vendas JPM\untCadClienteTDI.dfm</Transaction>
     <Transaction>2023/01/18 16:38:55.000.927,=C:\Users\joao.maria\OneDrive\JPMSigma\Vendas JPM\_terceiro\TDI\TDI.pas</Transaction>
+    <Transaction>2023/01/18 16:38:55.000.974,=C:\Users\joao.maria\OneDrive\JPMSigma\Vendas JPM\_terceiro\TDI\VisualizaImagensDasGuiasAbertas.pas</Transaction>
     <Transaction>2023/01/18 16:38:55.000.881,=C:\Users\joao.maria\OneDrive\JPMSigma\Vendas JPM\_terceiro\TDI\TabCloseButton.pas</Transaction>
     <Transaction>2023/01/18 16:38:55.000.811,=C:\Users\joao.maria\OneDrive\JPMSigma\Vendas JPM\_terceiro\TDI\PageControlEx.pas</Transaction>
     <Transaction>2023/01/18 17:11:37.000.994,=C:\Users\joao.maria\OneDrive\JPMSigma\Vendas JPM\Unit1.pas</Transaction>
-    <Transaction>2023/01/18 17:12:18.000.924,C:\Users\joao.maria\OneDrive\JPMSigma\Vendas JPM\Unit1.pas=C:\Users\joao.maria\OneDrive\JPMSigma\Vendas JPM\untHomeTDI.pas</Transaction>
     <Transaction>2023/01/18 17:12:18.000.924,C:\Users\joao.maria\OneDrive\JPMSigma\Vendas JPM\Unit1.dfm=C:\Users\joao.maria\OneDrive\JPMSigma\Vendas JPM\untHomeTDI.dfm</Transaction>
+    <Transaction>2023/01/18 17:12:18.000.924,C:\Users\joao.maria\OneDrive\JPMSigma\Vendas JPM\Unit1.pas=C:\Users\joao.maria\OneDrive\JPMSigma\Vendas JPM\untHomeTDI.pas</Transaction>
     <Transaction>2023/01/19 14:28:06.000.302,=C:\Users\joao.maria\OneDrive\JPMSigma\Vendas JPM\Unit1.pas</Transaction>
     <Transaction>2023/01/19 14:28:37.000.735,C:\Users\joao.maria\OneDrive\JPMSigma\Vendas JPM\untCadastroBaseTDI.dfm=C:\Users\joao.maria\OneDrive\JPMSigma\Vendas JPM\Unit1.dfm</Transaction>
     <Transaction>2023/01/19 14:28:37.000.735,C:\Users\joao.maria\OneDrive\JPMSigma\Vendas JPM\untCadastroBaseTDI.pas=C:\Users\joao.maria\OneDrive\JPMSigma\Vendas JPM\Unit1.pas</Transaction>
@@ -37,10 +37,10 @@
     <Transaction>2023/01/20 08:44:29.000.077,C:\Users\joao.maria\OneDrive\JPMSigma\Vendas JPM\Unit1.dfm=C:\Users\joao.maria\OneDrive\JPMSigma\Vendas JPM\untCadastroClienteTDI.dfm</Transaction>
     <Transaction>2023/01/20 08:44:29.000.077,C:\Users\joao.maria\OneDrive\JPMSigma\Vendas JPM\Unit1.pas=C:\Users\joao.maria\OneDrive\JPMSigma\Vendas JPM\untCadastroClienteTDI.pas</Transaction>
     <Transaction>2023/01/24 09:02:36.000.246,=C:\Users\joao.maria\OneDrive\JPMSigma\Vendas JPM\Unit1.pas</Transaction>
-    <Transaction>2023/01/24 09:02:58.000.636,C:\Users\joao.maria\OneDrive\JPMSigma\Vendas JPM\Unit1.pas=C:\Users\joao.maria\OneDrive\JPMSigma\Vendas JPM\untPDV.pas</Transaction>
     <Transaction>2023/01/24 09:02:58.000.636,C:\Users\joao.maria\OneDrive\JPMSigma\Vendas JPM\Unit1.dfm=C:\Users\joao.maria\OneDrive\JPMSigma\Vendas JPM\untPDV.dfm</Transaction>
-    <Transaction>2023/01/25 00:01:58.000.578,C:\Users\João Pedro\OneDrive\JPMSigma\Vendas JPM\untDM.dfm=C:\Users\João Pedro\OneDrive\JPMSigma\Vendas JPM\DM.dfm</Transaction>
+    <Transaction>2023/01/24 09:02:58.000.636,C:\Users\joao.maria\OneDrive\JPMSigma\Vendas JPM\Unit1.pas=C:\Users\joao.maria\OneDrive\JPMSigma\Vendas JPM\untPDV.pas</Transaction>
     <Transaction>2023/01/25 00:01:58.000.578,C:\Users\João Pedro\OneDrive\JPMSigma\Vendas JPM\untDM.pas=C:\Users\João Pedro\OneDrive\JPMSigma\Vendas JPM\DM.pas</Transaction>
+    <Transaction>2023/01/25 00:01:58.000.578,C:\Users\João Pedro\OneDrive\JPMSigma\Vendas JPM\untDM.dfm=C:\Users\João Pedro\OneDrive\JPMSigma\Vendas JPM\DM.dfm</Transaction>
     <Transaction>2023/01/25 00:02:47.000.895,=C:\Users\João Pedro\OneDrive\JPMSigma\Vendas JPM\Unit1.pas</Transaction>
     <Transaction>2023/01/25 00:03:28.000.364,C:\Users\João Pedro\OneDrive\JPMSigma\Vendas JPM\untCadastroProdutoTDI.pas=C:\Users\João Pedro\OneDrive\JPMSigma\Vendas JPM\Unit1.pas</Transaction>
     <Transaction>2023/01/25 00:03:28.000.364,C:\Users\João Pedro\OneDrive\JPMSigma\Vendas JPM\untCadastroProdutoTDI.dfm=C:\Users\João Pedro\OneDrive\JPMSigma\Vendas JPM\Unit1.dfm</Transaction>
@@ -57,21 +57,24 @@
     <Transaction>2023/01/27 23:45:32.000.857,C:\Users\João Pedro\OneDrive\JPMSigma\Vendas JPM\Unit1.pas=C:\Users\João Pedro\OneDrive\JPMSigma\Vendas JPM\untCadastroFornecedorTDI.pas</Transaction>
     <Transaction>2023/01/27 23:45:32.000.857,C:\Users\João Pedro\OneDrive\JPMSigma\Vendas JPM\Unit1.dfm=C:\Users\João Pedro\OneDrive\JPMSigma\Vendas JPM\untCadastroFornecedorTDI.dfm</Transaction>
     <Transaction>2023/01/27 23:46:05.000.298,=C:\Users\João Pedro\OneDrive\JPMSigma\Vendas JPM\Unit1.pas</Transaction>
-    <Transaction>2023/01/27 23:49:12.000.188,C:\Users\João Pedro\OneDrive\JPMSigma\Vendas JPM\Unit1.dfm=C:\Users\João Pedro\OneDrive\JPMSigma\Vendas JPM\untCadastroCargoTDI.dfm</Transaction>
     <Transaction>2023/01/27 23:49:12.000.188,C:\Users\João Pedro\OneDrive\JPMSigma\Vendas JPM\Unit1.pas=C:\Users\João Pedro\OneDrive\JPMSigma\Vendas JPM\untCadastroCargoTDI.pas</Transaction>
+    <Transaction>2023/01/27 23:49:12.000.188,C:\Users\João Pedro\OneDrive\JPMSigma\Vendas JPM\Unit1.dfm=C:\Users\João Pedro\OneDrive\JPMSigma\Vendas JPM\untCadastroCargoTDI.dfm</Transaction>
     <Transaction>2023/01/27 23:49:46.000.884,=C:\Users\João Pedro\OneDrive\JPMSigma\Vendas JPM\Unit2.pas</Transaction>
-    <Transaction>2023/01/27 23:51:49.000.240,C:\Users\João Pedro\OneDrive\JPMSigma\Vendas JPM\Unit2.pas=C:\Users\João Pedro\OneDrive\JPMSigma\Vendas JPM\untCadastroFormaPagTDI.pas</Transaction>
     <Transaction>2023/01/27 23:51:49.000.240,C:\Users\João Pedro\OneDrive\JPMSigma\Vendas JPM\Unit2.dfm=C:\Users\João Pedro\OneDrive\JPMSigma\Vendas JPM\untCadastroFormaPagTDI.dfm</Transaction>
+    <Transaction>2023/01/27 23:51:49.000.240,C:\Users\João Pedro\OneDrive\JPMSigma\Vendas JPM\Unit2.pas=C:\Users\João Pedro\OneDrive\JPMSigma\Vendas JPM\untCadastroFormaPagTDI.pas</Transaction>
     <Transaction>2023/01/28 15:24:43.000.581,=C:\Users\João Pedro\OneDrive\JPMSigma\Vendas JPM\Unit1.pas</Transaction>
     <Transaction>2023/01/28 15:26:04.000.308,C:\Users\João Pedro\OneDrive\JPMSigma\Vendas JPM\services\base\untService.base.dfm=C:\Users\João Pedro\OneDrive\JPMSigma\Vendas JPM\Unit1.dfm</Transaction>
     <Transaction>2023/01/28 15:26:04.000.308,C:\Users\João Pedro\OneDrive\JPMSigma\Vendas JPM\services\base\untService.base.pas=C:\Users\João Pedro\OneDrive\JPMSigma\Vendas JPM\Unit1.pas</Transaction>
     <Transaction>2023/01/28 15:28:46.000.577,=C:\Users\João Pedro\OneDrive\JPMSigma\Vendas JPM\Unit1.pas</Transaction>
-    <Transaction>2023/01/28 15:29:30.000.527,C:\Users\João Pedro\OneDrive\JPMSigma\Vendas JPM\services\untService.conexao.pas=C:\Users\João Pedro\OneDrive\JPMSigma\Vendas JPM\Unit1.pas</Transaction>
     <Transaction>2023/01/28 15:29:30.000.527,C:\Users\João Pedro\OneDrive\JPMSigma\Vendas JPM\services\untService.conexao.dfm=C:\Users\João Pedro\OneDrive\JPMSigma\Vendas JPM\Unit1.dfm</Transaction>
+    <Transaction>2023/01/28 15:29:30.000.527,C:\Users\João Pedro\OneDrive\JPMSigma\Vendas JPM\services\untService.conexao.pas=C:\Users\João Pedro\OneDrive\JPMSigma\Vendas JPM\Unit1.pas</Transaction>
     <Transaction>2023/01/28 15:38:05.000.765,=C:\Users\João Pedro\OneDrive\JPMSigma\Vendas JPM\Unit1.pas</Transaction>
     <Transaction>2023/01/28 15:38:23.000.464,=C:\Users\João Pedro\OneDrive\JPMSigma\Vendas JPM\Unit1.pas</Transaction>
-    <Transaction>2023/01/28 15:38:49.000.035,C:\Users\João Pedro\OneDrive\JPMSigma\Vendas JPM\services\untService.Cadastro.dfm=C:\Users\João Pedro\OneDrive\JPMSigma\Vendas JPM\Unit1.dfm</Transaction>
     <Transaction>2023/01/28 15:38:49.000.035,C:\Users\João Pedro\OneDrive\JPMSigma\Vendas JPM\services\untService.Cadastro.pas=C:\Users\João Pedro\OneDrive\JPMSigma\Vendas JPM\Unit1.pas</Transaction>
+    <Transaction>2023/01/28 15:38:49.000.035,C:\Users\João Pedro\OneDrive\JPMSigma\Vendas JPM\services\untService.Cadastro.dfm=C:\Users\João Pedro\OneDrive\JPMSigma\Vendas JPM\Unit1.dfm</Transaction>
+    <Transaction>2023/01/30 12:44:37.000.033,=C:\Users\joao.maria\OneDrive\JPMSigma\Vendas JPM\Unit1.pas</Transaction>
+    <Transaction>2023/01/30 12:45:11.000.400,C:\Users\joao.maria\OneDrive\JPMSigma\Vendas JPM\untControlEstoque.dfm=C:\Users\joao.maria\OneDrive\JPMSigma\Vendas JPM\Unit1.dfm</Transaction>
+    <Transaction>2023/01/30 12:45:11.000.399,C:\Users\joao.maria\OneDrive\JPMSigma\Vendas JPM\untControlEstoque.pas=C:\Users\joao.maria\OneDrive\JPMSigma\Vendas JPM\Unit1.pas</Transaction>
   </Transactions>
 	<ProjectSortOrder AutoSort="0" SortType="0">
     <File Path="services"/>
@@ -120,5 +123,7 @@
     <File Path="untPDV.dfm"/>
     <File Path="untPrincipal.pas"/>
     <File Path="untPrincipal.dfm"/>
+    <File Path="untControlEstoque.pas"/>
+    <File Path="untControlEstoque.dfm"/>
   </ProjectSortOrder>
 </BorlandProject>
